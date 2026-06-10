@@ -1,0 +1,18 @@
+// Description:
+//    Force l'utilisation de plusieurs registres dans une expression complexe.
+// Resultats:
+//    Resultat: 37
+//    Initial R2: 100
+// Historique: cree le 14/01/2026
+class Calc {
+    int compute(int n) {
+        // Expression complexe pour saturer les registres disponibles
+        return n + (n*2) - (n/2) + (n+1) * (n-1);
+    }
+}
+{
+    int saveR2 = 100; // Si le compilo utilise R2 ici
+    Calc c = new Calc();
+    println("Resultat: ", c.compute(5));
+    println("Initial R2: ", saveR2); // Doit rester 100
+}

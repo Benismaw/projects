@@ -1,0 +1,13 @@
+// Description:
+//    Test de contexte : instanceof sur un float.
+//
+// Resultats:
+//    Erreur contextuelle
+//
+// Historique:
+//    cree le 13/01/2026
+
+{
+    float x = 1.1;
+    boolean b = x instanceof Object;
+}

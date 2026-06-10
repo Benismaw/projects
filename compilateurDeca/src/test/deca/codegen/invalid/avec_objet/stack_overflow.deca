@@ -1,0 +1,16 @@
+// Description:
+//    Débordement de pile par récursion profonde.
+//
+// Resultats:
+//    Erreur : pile pleine
+// 
+// Historique: cree le 14/01/2026
+class Overflow {
+    void rec(int n) {
+        rec(n + 1);
+    }
+}
+{
+    Overflow o = new Overflow();
+    o.rec(1);
+}

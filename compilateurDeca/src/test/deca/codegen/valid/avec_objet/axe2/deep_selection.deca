@@ -1,0 +1,13 @@
+// Description:
+//    Chaîne de sélection longue a.b.c.x pour tester la gestion des registres.
+// Resultats:
+//    100
+// Historique:
+//    cree le 14/01/2026
+class C { int x = 100; }
+class B { C c = new C(); }
+class A { B b = new B(); }
+{
+    A a = new A();
+    println(a.b.c.x);
+}

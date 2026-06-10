@@ -1,0 +1,9 @@
+//Description
+//
+//Teste une float avec une virgule en lieu d'un point
+// Historique:
+//    cree le 08/01/2026
+{
+    float x
+    x= 1,2; 
+}

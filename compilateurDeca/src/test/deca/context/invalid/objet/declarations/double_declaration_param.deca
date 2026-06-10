@@ -1,0 +1,15 @@
+// Description:
+//    Test de contexte : paramètres de même nom.
+//
+// Resultats:
+//    Erreur contextuelle
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    void m(int x, int x) {
+    }
+}
+{
+}

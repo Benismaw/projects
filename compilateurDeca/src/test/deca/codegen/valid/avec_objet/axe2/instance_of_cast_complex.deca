@@ -1,0 +1,23 @@
+// Description:
+//    Ce test vérifie que le compilateur remonte correctement la chaîne des vtables et gère la conversion dynamique de type via (Type)(valeur)
+// Resultats:
+//    1 3
+// Historique:
+//    cree le 14/01/2026
+class A { int x = 1; }
+class B extends A { int y = 2; }
+class C extends B { int z = 3; }
+{
+    Object obj = new C();
+    A a;
+    C c;
+    if (obj instanceof A) {
+        // Cast vers une super-classe a 
+        a = (A)(obj);
+        if (a instanceof C) {
+            // Cast vers la classe réelle
+            c = (C)(obj);
+            println(a.x, " ", c.z); 
+        }
+    }
+}

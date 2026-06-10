@@ -1,0 +1,12 @@
+// Description:
+//    Test de contexte : comparaison type incompatible.
+//
+// Resultats:
+//    Erreur contextuelle : Comparaison invalide entre bool et null.
+//
+// Historique:
+//    cree le 13/01/2026
+
+{
+    if (true == null) {}
+}

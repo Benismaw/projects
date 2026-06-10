@@ -1,0 +1,24 @@
+// Description:
+//    Vérifie le masquage de champs.
+//    En Deca, le champ de la fille ne remplace pas celui de la mère.
+// Resultats:
+//    10
+//    20
+// Historique:
+//    cree le 14/01/2026
+
+class Mere {
+    int x = 10;
+}
+
+class Fille extends Mere {
+    int x = 20; // Nouveau champ à un offset différent
+}
+
+{
+    Fille f = new Fille();
+    Mere m = f;
+    println(m.x); // Accès à Mere.x (offset 1)
+    println(f.x); // Accès à Fille.x (offset 2)
+}
+

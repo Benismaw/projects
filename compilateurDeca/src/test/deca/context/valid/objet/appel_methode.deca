@@ -1,0 +1,31 @@
+// Description:
+//    Test de contexte : Appel de méthode avec passage de paramètres.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+class B extends A {}
+
+class C {
+    void process(A param1, float param2) {
+    }
+}
+
+{
+    C c = new C();
+    A a = new A();
+    B b = new B();
+
+    // Cas 1 : Types exacts
+    c.process(a, 1.0);
+
+    // Cas 2 : Sous-type (B est un A) + Conversion int -> float
+    c.process(b, 2);
+
+    // Cas 3 : null est compatible avec tout objet
+    c.process(null, 0);
+}

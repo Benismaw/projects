@@ -1,0 +1,11 @@
+// Description:
+//    Vérifie l'opérateur instanceof sur une instance directe de la classe.
+// Resultats:
+//    true
+// Historique:
+//    cree le 14/01/2026
+class A {}
+{
+    A a = new A();
+    if (a instanceof A) { println("true"); } else { println("false"); }
+}

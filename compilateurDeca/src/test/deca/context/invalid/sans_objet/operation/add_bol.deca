@@ -1,0 +1,16 @@
+// Description:
+//    Sans-Objet
+//    Arithmétique
+//    Addition sur type non numérique :
+//
+// Resultats:
+//    Ligne 14: 
+//    l'opération plus n'est pas définie pour boolean 
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    boolean b = true + false;
+}
+

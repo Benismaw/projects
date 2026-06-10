@@ -1,0 +1,15 @@
+// Description:
+//    Sans-Objet
+//    Comparaison
+//    Inégalité sur booléens :
+//
+// Resultats:
+//    Ligne 14: 
+//    les opérateurs <, >, <=, >= ne s'appliquent qu'aux types numériques 
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    boolean b = (true > false);
+}

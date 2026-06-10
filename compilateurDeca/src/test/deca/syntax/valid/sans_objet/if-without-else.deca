@@ -1,0 +1,10 @@
+
+// Description:
+//
+// teste if sans else
+// Historique:09/01/2026
+{
+    if (true) {
+        print(1);
+    }
+}

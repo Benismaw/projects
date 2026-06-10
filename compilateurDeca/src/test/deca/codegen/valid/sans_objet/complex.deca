@@ -1,0 +1,11 @@
+// Description:
+//    Calcul complexe mélangeant priorités et types
+// Resultats:
+//    Resultat: 7.50000e+00
+{
+    int x = 2;
+    float y = 3.5;
+    // (2 * 3.5) + (10 / 2) - 4.5 = 7.0 + 5 - 4.5 = 7.5
+    float res = (x * y) + (10 / x) - 4.5;
+    println("Resultat: ", res);
+}

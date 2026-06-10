@@ -1,0 +1,19 @@
+// Description:
+//    Sans-Objet
+//    affectation
+//  
+//
+// Resultats:
+//    compilation bonne
+//        
+// 
+// Historique:
+//    cree le 06/01/2026
+
+{
+    int a;
+
+    a = 1 + 1;
+
+    
+}

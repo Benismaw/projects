@@ -1,0 +1,23 @@
+// Description:
+//    Vérifie les structures if/else imbriquées avec conditions complexes.
+//
+// Resultats:
+//    Vérification réussie.
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    int x = 5;
+    boolean b = true;
+
+    if ((x > 0 && b) || !false) {
+        if (x == 5) {
+            print("cinq");
+        } else {
+            print("autre");
+        }
+    } else {
+        x = 0;
+    }
+}

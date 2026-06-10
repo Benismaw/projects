@@ -1,0 +1,7 @@
+// Description: Accès à un champ d'un objet null.
+// Resultats: Erreur : dereferencement de null
+class A { int x; }
+{
+    A a = null;
+    println(a.x); // Doit lever une erreur 
+}

@@ -1,0 +1,17 @@
+// Description:
+//    Liaison dynamique avec type de retour int. 
+// Resultats:
+//    2
+// Historique:
+//    cree le 14/01/2026
+
+class Super {
+    int getValue() { return 1; }
+}
+class Sub extends Super {
+    int getValue() { return 2; }
+}
+{
+    Super s = new Sub();
+    println(s.getValue()); // Doit afficher 2
+}

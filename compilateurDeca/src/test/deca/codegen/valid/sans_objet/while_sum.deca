@@ -1,0 +1,18 @@
+// Description:
+//    tests multi declaration 
+//
+// Resultats:
+//   55
+// 
+// Historique:09/01/2026
+
+{
+    int i=1;
+    int s=0;
+    while (i<=10){
+         s=s+i;
+        i= i+1;
+       
+    }
+println(s);
+}

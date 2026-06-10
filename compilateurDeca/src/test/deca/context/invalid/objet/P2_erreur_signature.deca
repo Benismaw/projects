@@ -1,0 +1,12 @@
+// Test d'erreur : Signature différente lors de la redéfinition
+class A {
+    void compute(int x) {}
+}
+
+class B extends A {
+    // Invalide : le type du paramètre a changé (float au lieu de int)
+    void compute(float x) {} 
+}
+
+{
+}

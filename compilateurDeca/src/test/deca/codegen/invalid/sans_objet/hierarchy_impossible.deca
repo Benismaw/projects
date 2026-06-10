@@ -1,0 +1,16 @@
+// Description:
+//    Erreur a l'execution : conversion impossible
+//
+// Resultats:
+//    Erreur : conversion impossible
+//
+// Historique:
+//    cree le 10/01/2026
+class A { }
+class B extends A { }
+class C extends B { }
+{
+    A a = new B();   // objet dynamique = B
+    C c = (C)(a);    // cast vers C doit echouer
+    println(0);
+}

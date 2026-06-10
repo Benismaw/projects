@@ -1,0 +1,18 @@
+// Description:
+//    Vérifie l'ordre d'évaluation strict (X puis arguments).
+// Resultats:
+//    Eval X
+//    Eval Y1
+//    Eval Y2
+//    OK
+// Historique: cree le 14/01/2026
+class Side {
+    Side getThis() { println("Eval X"); return this; }
+    int p1() { println("Eval Y1"); return 1; }
+    int p2() { println("Eval Y2"); return 2; }
+    void test(int a, int b) { println("OK"); }
+}
+{
+    Side s = new Side();
+    s.getThis().test(s.p1(), s.p2());
+}

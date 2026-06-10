@@ -1,0 +1,14 @@
+// Description:
+//    Test de contexte : Type de retour incompatible
+//
+// Resultats:
+//    Erreur contextuelle : Type incompatible avec le type attendu
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A {
+    int m() {
+        return true;
+    }
+}

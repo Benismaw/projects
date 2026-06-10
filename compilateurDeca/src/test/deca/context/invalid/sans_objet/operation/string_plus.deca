@@ -1,0 +1,15 @@
+// Description:
+//    Sans-Objet
+//    Arithmétique
+//    Concaténation de chaînes non supportée :
+//
+// Resultats:
+//    Ligne 14: 
+//    l'opération plus n'est pas définie pour string 
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    string s = "a" + "b";
+}

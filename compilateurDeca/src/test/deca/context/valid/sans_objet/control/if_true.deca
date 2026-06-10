@@ -1,0 +1,8 @@
+// Description:
+//    Condition booléenne valide
+// Resultats:
+//    Vérification réussie
+{
+    if (true) { print("ok"); }
+    while (false) { ; }
+}

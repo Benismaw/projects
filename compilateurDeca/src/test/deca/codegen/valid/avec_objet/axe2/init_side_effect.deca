@@ -1,0 +1,19 @@
+// Description:
+//    Ce test vérifie qu'une méthode appelée pour initialiser un champ peut modifier un autre champ.
+// Resultats:
+//    5 10
+// Historique:
+//    cree le 14/01/2026
+class SideEffect {
+    int x = this.initX();
+    int y = 10;
+
+    int initX() {
+        this.y = 50; // Tente de modifier y avant son init explicite
+        return 5;
+    }
+}
+{
+    SideEffect s = new SideEffect();
+    println(s.x, " ", s.y); // Résultat attendu : 5 10
+}

@@ -1,0 +1,8 @@
+// Description: Tentative d'allocation massive pour saturer le tas.
+// Resultats: Erreur : allocation impossible, tas plein
+class Big { int x1, x2, x3, x4, x5; }
+{
+    while (true) {
+        new Big(); // Doit finir par lever l'erreur tas_plein 
+    }
+}

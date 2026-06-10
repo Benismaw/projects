@@ -1,0 +1,20 @@
+// Description:
+//    Liaison dynamique avec retour d'un type classe (Object).
+// Resultats:
+//    OK
+// Historique:
+//    cree le 14/01/2026
+
+class Super {
+    Object getObj() { return null; }
+}
+class Sub extends Super {
+    // On retourne 'this', qui est un sous-type d'Object
+    Object getObj() { return this; }
+}
+{
+    Super s = new Sub();
+    if (s.getObj() != null) {
+        println("OK");
+    }
+}

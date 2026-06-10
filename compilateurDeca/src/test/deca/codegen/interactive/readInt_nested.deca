@@ -1,0 +1,18 @@
+// Description:
+//    If imbriques
+//
+// Resultats:
+//    Affiche "A" si x<0, "B" si 0<=x<10, sinon "C"
+{
+    int x;
+    x = readInt();
+    if (x < 0) {
+        println("A");
+    } else {
+        if (x < 10) {
+            println("B");
+        } else {
+            println("C");
+        }
+    }
+}

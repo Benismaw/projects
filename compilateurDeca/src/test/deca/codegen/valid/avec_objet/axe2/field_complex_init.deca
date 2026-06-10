@@ -1,0 +1,19 @@
+// Description:
+//    Vérifie l'initialisation de champs par des expressions complexes.
+//    Teste la priorité des opérateurs et l'utilisation de registres temporaires.
+// Resultats:
+//    15 7.50000e+00 true
+// Historique:
+//    cree le 14/01/2026
+
+class Calc {
+    int x = (2 + 3) * 3;
+    float y = 15.0 / 2.0;
+    boolean b = (5 > 2) && (true || false);
+}
+
+{
+    Calc c = new Calc();
+    print(c.x, " ", c.y, " ");
+    if (c.b) { print("true"); };
+}

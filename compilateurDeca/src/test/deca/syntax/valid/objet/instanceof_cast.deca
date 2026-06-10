@@ -1,0 +1,15 @@
+// Description:
+//    Test de la syntaxe du Cast et de Instanceof.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+{
+    Object o;
+    boolean b;
+    o = (Object)(null);
+    b = o instanceof Object;
+}

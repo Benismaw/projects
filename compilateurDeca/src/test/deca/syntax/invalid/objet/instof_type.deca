@@ -1,0 +1,13 @@
+// Description:
+//   Instanceof sans type.
+// Resultats:
+//    Echec (erreur de syntaxe)
+//
+// Historique:
+//    cree le 15/01/2026
+
+{
+    Object o;
+    boolean b;
+    b = o instanceof ;
+}

@@ -1,0 +1,7 @@
+// Description:
+//    Mélange complexe d'antislashs et de guillemets.
+// Resultats:
+//    "\" \\"
+{
+    println("\"\\\" \\\\\"");
+}

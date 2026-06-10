@@ -1,0 +1,13 @@
+// Description:
+//    Method ASM avec string
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 15/01/2026
+class A {
+    int f() asm("LOAD #0, R0 ; RTS");
+}
+{
+}

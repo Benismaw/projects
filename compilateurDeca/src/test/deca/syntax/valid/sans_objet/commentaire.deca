@@ -1,0 +1,15 @@
+
+// Description:
+//Teste commentaires 
+// Historique:09/01/2026
+{
+    /* commentaires
+    sur plusieurs 
+    lignes */
+    int x;
+    int y;
+    x=1;
+    // commentaires
+    y=1;
+
+}

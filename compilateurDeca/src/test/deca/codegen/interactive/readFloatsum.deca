@@ -1,0 +1,11 @@
+// Description:
+//    Lecture de deux floats et somme
+//
+// Resultats:
+//    Affiche a+b
+{
+    float a; float b;
+    a = readFloat();
+    b = readFloat();
+    println(a + b);
+}

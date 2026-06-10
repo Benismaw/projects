@@ -1,0 +1,20 @@
+// Description:
+//    Test de contexte : appel de methode sur un entier
+//
+// Resultats:
+//    Erreur contextuelle : Appel de méthode impossible sur le type int
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A {
+    protected int x;
+    void m() {
+        x = 1;
+    }
+}
+{
+    int y = 3;
+    A a = new A();
+    y.m();
+}

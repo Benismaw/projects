@@ -1,0 +1,19 @@
+// Description:
+//    Récursion infinie via appel de méthode pour saturer la pile.
+//
+// Resultats:
+//    Erreur : pile pleine
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void infini() {
+        this.infini();
+    }
+}
+
+{
+    A a = new A();
+    a.infini();
+}

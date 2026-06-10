@@ -1,0 +1,17 @@
+// Description:
+//    Erreur a l'execution : debordement de tas - 2 allocations par iteration
+//
+// Resultats:
+//    Erreur ligne : 9: Tas plein
+//
+// Historique:
+//    cree le 10/01/2026
+class A { int x; int y; int z; }
+{
+    A a1;
+    A a2;
+    while (true) {
+        a1 = new A();
+        a2 = new A();
+    }
+}

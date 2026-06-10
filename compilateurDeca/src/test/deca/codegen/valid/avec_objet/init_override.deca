@@ -1,0 +1,21 @@
+// Description:
+//    Appel d'une méthode redéfinie pendant l'initialisation du parent.
+// Resultats:
+//    Init B
+//    x = 100
+// Historique: cree le 14/01/2026
+
+class A {
+    int x = this.setX();
+    int setX() { return 1; }
+}
+class B extends A {
+    int setX() { 
+        println("Init B");
+        return 100; 
+    }
+}
+{
+    B b = new B();
+    println("x = ", b.x);
+}

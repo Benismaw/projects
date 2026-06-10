@@ -1,0 +1,13 @@
+
+
+// Description:
+//
+//tTeste priorité des opérateurs et les parenthèses
+// Historique:09/01/2026
+{
+    int x;
+    x= 1+2 * 3;
+    println(x);
+    x=(1+2)*3;
+    println(x);
+}

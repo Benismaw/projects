@@ -1,0 +1,15 @@
+// Description:
+//    Calcul de factorielle récursive dans un objet.
+// Resultats:
+//    120
+// Historique: cree le 14/01/2026
+class Calc {
+    int fact(int n) {
+        if (n <= 1) { return 1; }
+        return n * fact(n - 1);
+    }
+}
+{
+    Calc c = new Calc();
+    println(c.fact(5));
+}

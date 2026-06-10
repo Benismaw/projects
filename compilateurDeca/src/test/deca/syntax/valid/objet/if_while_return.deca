@@ -1,0 +1,24 @@
+// Description:
+//   Decl_method, list_params, bloc à l'intérieur de la classe, retourner expr, si, tant que.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 15/01/2026
+class A {
+    int inc(int a, int b) {
+        int s;
+        s = a + b;
+        while (s < 10) {
+            s = s + 1;
+        }
+        if (s == 10) {
+            return s;
+        } else {
+            return s + 1;
+        }
+    }
+}
+{
+}

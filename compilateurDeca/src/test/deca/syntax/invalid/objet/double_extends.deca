@@ -1,0 +1,13 @@
+// Description:
+//    Erreur de syntaxe : héritage multiple.
+//
+// Resultats:
+//    Erreur syntaxique ligne 11
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A extends Object extends B {
+}
+{
+}

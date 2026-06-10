@@ -1,0 +1,122 @@
+#include "Equipement.deca"
+#include "Personnages.deca"
+#include "Niveau.deca"
+
+{
+    Hero hero = new Hero();
+    Niveau niveau = new Niveau();
+    Equipement e1 = new Equipement();
+    int currentLevel = 1;
+    boolean gameRunning = true;
+    int input;
+    int nextX;
+    int nextY;
+    Monstre m;
+    Equipement secretItem = new Equipement();
+    boolean foundSecret = false;
+
+    hero.initHero(1, 1);
+    e1.setBonus(5, 50); // L'equipement vital pour le boss
+    
+    secretItem.setBonus(50, 200); // EXCALIBUR
+
+    println("Bienvenue dans deca Dungeon !");
+    println("Vous etes h. Atteignez la porte P au niveau 1 puis eliminer me monstre qui terrorise la population.");
+    println("Tuez les monstres M pour vous equiper.");
+
+    niveau.initLevel1();
+
+    while (gameRunning) {
+        println("--------------------------------");
+        println("HP: ", hero.hp, " | ATK: ", hero.atk);
+        niveau.afficher(hero);
+        println("Entrez 1(Haut), 2(Bas), 3(Gauche), 4(Droite) pour bouger:");
+        
+        input = readInt();
+        
+        nextX = hero.x;
+        nextY = hero.y;
+
+        if (input == 1) { nextY = nextY - 1; }
+        else if (input == 2) { nextY = nextY + 1; }
+        else if (input == 3) { nextX = nextX - 1; }
+        else if (input == 4) { nextX = nextX + 1; }
+        else { println("Commande inconnue."); }
+
+        if (niveau.estMur(nextX, nextY)) {
+            println("C'est un mur !");
+        } else {
+            // Check Monster
+            m = niveau.getMonstre(nextX, nextY);
+            if (m != null) {
+                println("Combat lance contre un monstre !");
+                while (!m.estMort() && !hero.estMort()) {
+                    println("HP: ", hero.hp, " Mana: ", hero.mana, " | Monstre HP: ", m.hp);
+                    println("Action: 1. Attaquer, 2. Soigner");
+                    if (hero.hasFireball) {
+                        println("3. Boule de feu (10 Mana)");
+                    }
+                    input = readInt();
+
+                    if (input == 1) {
+                        hero.attaquer(m);
+                    } else if (input == 2) {
+                        hero.seSoigner();
+                    } else if (input == 3 && hero.hasFireball) {
+                        hero.bouleDeFeu(m);
+                    } else {
+                        println("Action invalide, tour perdu !");
+                    }
+
+                    if (!m.estMort()) {
+                        m.attaquer(hero);
+                    }
+                }
+                
+                if (hero.estMort()) {
+                    println("Vous etes mort... Game Over.");
+                    gameRunning = false;
+                } else {
+                    println("Monstre vaincu !");
+                    if (currentLevel == 1) {
+                        if (m == niveau.m1) {
+                            println("Vous trouvez un equipement sur le monstre !");
+                            hero.equiper(e1);
+                        } else if (m == niveau.m2) {
+                             println("Vous apprenez le sort BOULE DE FEU !");
+                             hero.hasFireball = true;
+                        }
+                    } else {
+                        // Boss vaincu
+                        println("BOSS VAINCU !");
+                        gameRunning = false;
+                        println("Felicitation vous avez gagner");
+                    }
+                }
+            } else {
+                // Deplacement
+                hero.x = nextX;
+                hero.y = nextY;
+                
+                // Secret Tile Check (Bottom Left of Level 1)
+                // Width 10, Height 6. Bottom row is 5. Wall is 5. Valid bottom is 4. Left wall is 0. Valid left is 1.
+                // So (1, 4)
+                if (currentLevel == 1 && hero.x == 1 && hero.y == 4 && !foundSecret) {
+                    println("Vous marchez sur une dalle etrange...");
+                    println("VOUS AVEZ TROUVE L'EPEE LEGENDAIRE EXCALIBUR !");
+                    hero.equiper(secretItem);
+                    foundSecret = true;
+                }
+
+                // Check Door
+                if (!niveau.isBossLevel && hero.x == niveau.doorX && hero.y == niveau.doorY) {
+                    println("Niveau 1 termine ! Passage au niveau 2 (BOSS).");
+                    currentLevel = 2;
+                    niveau.initLevel2();
+                    hero.x = 1;
+                    hero.y = 1; // Reset pos
+                }
+            }
+        }
+    }
+}

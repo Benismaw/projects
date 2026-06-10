@@ -1,0 +1,13 @@
+// Description:
+//    Test de contexte : instanceof sur un boolean.
+//
+// Resultats:
+//    Erreur contextuelle
+//
+// Historique:
+//    cree le 13/01/2026
+
+{
+    boolean x = true;
+    boolean b = x instanceof Object;
+}

@@ -1,0 +1,15 @@
+// Description:
+// Domaines et méthodes mixtes
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 15/01/2026
+class A {
+    int x;
+    int f() { return 1; }
+    protected float y;
+    int g(int a) { return a + f(); }
+}
+{
+}

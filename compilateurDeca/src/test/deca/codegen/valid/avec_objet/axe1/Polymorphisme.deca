@@ -1,0 +1,25 @@
+// Description:
+//    Test de liaison dynamique : appel via une référence de la super-classe
+//
+// Resultats:
+//    Version B
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void message() {
+        println("Version A");
+    }
+}
+
+class B extends A {
+    void message() {
+        println("Version B");
+    }
+}
+
+{
+    A a = new B(); 
+    a.message(); // Doit afficher "Version B" 
+}

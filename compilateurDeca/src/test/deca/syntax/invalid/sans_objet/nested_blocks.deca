@@ -1,0 +1,15 @@
+
+
+//Description
+//
+// teste blocs imbriques
+// Historique:
+//    cree le 08/01/2026
+{
+    {
+        {
+            int x;
+            x = 1;
+        }
+    }
+}

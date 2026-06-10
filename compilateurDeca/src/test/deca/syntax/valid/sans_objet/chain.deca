@@ -1,0 +1,9 @@
+
+// Description:
+//Teste l'affectation chaînée 
+// Historique:09/01/2026
+{
+    int x, y, z;
+    x=y=z=2; 
+
+}

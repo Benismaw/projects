@@ -1,0 +1,17 @@
+class Calculateur {
+    int calculerPolynome(int x) {
+        return 3 * x * x + 2 * x + 1;
+    }
+}
+
+{
+    Calculateur calc = new Calculateur();
+    int valeur;
+    int resultat;
+
+    println("Entrez la valeur de x :");
+    valeur = readInt();
+    resultat = calc.calculerPolynome(valeur);
+
+    println("Resultat : ", resultat);
+}

@@ -1,0 +1,14 @@
+// Description:
+// Sélection au sein d'une expression arithmétique
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 15/01/2026
+class A { float f; }
+{
+    A a;
+    float r;
+    a = new A();
+    r = a.f + 1.0;
+}

@@ -1,0 +1,10 @@
+
+
+//Description
+//
+//Teste syntax invalide
+// Historique:
+//    cree le 08/01/2026
+{
+      println(3,);
+}

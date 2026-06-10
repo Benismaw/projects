@@ -1,0 +1,33 @@
+// Description:
+//    Vérifie que les champs non initialisés reçoivent bien les valeurs
+//    par défaut (0, 0.0, false, null) selon la sémantique Deca.
+//
+// Resultats:
+//    0 0.00000e+00 null false
+//
+// Historique:
+//    cree le 14/01/2026
+
+class Default {
+    int i;
+    float f;
+    boolean b;
+    Default obj;
+}
+
+{
+    Default d = new Default();
+
+
+    print(d.i, " ", d.f);
+
+    // print(d.obj) est interdit, donc on utilise un if
+    if (d.obj == null) {
+        print(" null");
+    }
+
+    // print(d.b) est interdit, on utilise un if
+    if (!d.b) {
+        println(" false");
+    }
+}

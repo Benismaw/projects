@@ -1,0 +1,12 @@
+// Description:
+//    Test des instructions vides (NoOperation)
+// Resultats:
+//    1
+{
+    int x = 1;
+    ; // Instruction vide seule
+    if (true) {
+        ; // Instruction vide dans un bloc
+    }
+    println(x);
+}

@@ -1,0 +1,11 @@
+// Description:
+//    Runtime error: beaucoup de variables et division par zero
+//
+// Resultats:
+//    Erreur d'execution
+{
+    int a = 1, b = 2, c = 3, d = 4, e = 5;
+    int z = (b - b);
+    println(a + c + d + e);
+    println(50 / z);
+}

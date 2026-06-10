@@ -1,0 +1,16 @@
+// Description:
+//    Sans-Objet
+//    opération partielle ⊕ (ajout de paramètre)
+//
+// Resultats:
+//    Ligne 13: 
+//        Nom de paramètre dupliqué
+// 
+// Historique:
+//    cree le 06/01/2026
+
+class A {
+    int methode(float a, int a){
+        return 0;
+    }
+}

@@ -1,0 +1,16 @@
+// Description:
+//    Sans-Objet
+//    Affectation et expressions de base
+//    operateur ;
+//
+// Resultats:
+//    Ligne 16: 
+//     condition assign_compatible : Type incompatible pour l'affectation
+// 
+// Historique:
+//    cree le 06/01/2026
+
+
+{
+    boolean a = (5 > true);
+}

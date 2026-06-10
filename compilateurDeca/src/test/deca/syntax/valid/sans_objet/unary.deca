@@ -1,0 +1,13 @@
+
+// Description:
+//
+//Teste les opérateurs unaires (- et !)
+
+// Historique:09/01/2026
+{
+    int x;
+    boolean b;
+    x= -(1+2);
+    b=!false;
+    println(x,b);
+}

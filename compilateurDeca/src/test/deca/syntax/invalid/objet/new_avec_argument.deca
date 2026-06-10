@@ -1,0 +1,15 @@
+// Description:
+//    Erreur de syntaxe : le constructeur new ne prend pas d'arguments en Deca.
+//
+// Resultats:
+//    Erreur syntaxique ligne 14
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+}
+
+{
+    A a = new A(5);
+}

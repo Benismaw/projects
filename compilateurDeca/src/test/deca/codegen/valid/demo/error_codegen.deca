@@ -1,0 +1,11 @@
+class A {
+    void infiniteRecursion() {
+        infiniteRecursion(); // Appel récursif sans fin
+    }
+}
+
+{
+    A a = new A();
+    println("Lancement de la recursion infinie...");
+    a.infiniteRecursion();
+}

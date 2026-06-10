@@ -1,0 +1,11 @@
+// Description:
+//    Expression très profonde pour vérifier que TSTO réserve assez 
+//    de place pour les temporaires sur la pile.
+// Resultats:
+//    10
+{
+    int a = 1;
+    // Force l'empilement de temporaires si les registres sont limités.
+    println(a+(a+(a+(a+(a+(a+(a+(a+(a+a))))))))); 
+}
+

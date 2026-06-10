@@ -1,0 +1,16 @@
+// Description:
+//    Erreur à l'execution: division par 0 dans une boucle
+//
+// Resultats:
+//    Erreur d'execution
+//
+// Historique:
+//    cree le 10/01/2026
+
+{
+    int i = 0;
+    while (i < 1) {
+        println(1 / 0);
+        i = i + 1;
+    }
+}

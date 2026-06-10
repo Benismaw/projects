@@ -1,0 +1,27 @@
+// Description:
+//    Liaison dynamique via "this". La classe mère appelle une méthode 
+//    qui est redéfinie dans la classe fille.
+// Resultats:
+//    C'est la fille !
+// Historique:
+//    cree le 14/01/2026
+
+class Mere {
+    void identifier() {
+        this.quiSuisJe();
+    }
+    void quiSuisJe() {
+        println("C'est la mere !");
+    }
+}
+
+class Fille extends Mere {
+    void quiSuisJe() {
+        println("C'est la fille !");
+    }
+}
+
+{
+    Mere m = new Fille();
+    m.identifier(); // Doit afficher "C'est la fille !"
+}

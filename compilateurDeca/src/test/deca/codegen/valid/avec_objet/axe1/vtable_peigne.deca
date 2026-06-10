@@ -1,0 +1,29 @@
+// Description:
+//    Héritage en peigne (une mère, plusieurs filles).
+//    Vérifie que chaque fille possède son propre index de VTable correct.
+// Resultats:
+//    Fille1 Fille2 Fille3
+// Historique:
+//    cree le 14/01/2026
+
+class Mere {
+    void identifier() { print("Mere"); }
+}
+class Fille1 extends Mere {
+    void identifier() { print("Fille1 "); }
+}
+class Fille2 extends Mere {
+    void identifier() { print("Fille2 "); }
+}
+class Fille3 extends Mere {
+    void identifier() { print("Fille3"); }
+}
+
+{
+    Mere f1 = new Fille1();
+    Mere f2 = new Fille2();
+    Mere f3 = new Fille3();
+    f1.identifier();
+    f2.identifier();
+    f3.identifier();
+}

@@ -1,0 +1,31 @@
+// Description:
+//    Tests arithmetic operations
+//
+// Results:
+//    Success
+//
+// History:
+//    created 11/01/2026
+
+{
+    int i = 10;
+    int j = 5;
+    float x = 2.5;
+    float y = 1.25;
+    int resInt;
+    float resFloat;
+
+    resInt = i + j;
+    resInt = i - j;
+    resInt = i * j;
+    resInt = i / j;
+    resInt = i % j;
+
+    resFloat = x + y;
+    resFloat = x - y;
+    resFloat = x * y;
+    resFloat = x / y;
+    
+    resFloat = i + x;
+    resFloat = x * j;
+}

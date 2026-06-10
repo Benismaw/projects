@@ -1,0 +1,18 @@
+// Description:
+//    Calcul du PGCD par l'algorithme d'Euclide (modulo récursif)
+// Resultats:
+//    PGCD(48, 18) = 6
+// Historique:
+//    cree le 18/01/2026
+class ModuloRecursion {
+    int pgcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        }
+        return pgcd(b, a % b);
+    }
+}
+{
+    ModuloRecursion m = new ModuloRecursion();
+    print("PGCD(48, 18) = ", m.pgcd(48, 18));
+}

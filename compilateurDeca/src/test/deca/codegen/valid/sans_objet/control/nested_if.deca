@@ -1,0 +1,22 @@
+// Description:
+//    Test nested if statements
+//
+// Resultats:
+//    ok
+//    ok
+// 
+{
+    int a = 10;
+    int b = 20;
+
+    if (a < b) {
+        println("ok");
+        if (a == 10) {
+            println("ok");
+        } else {
+            println("no");
+        }
+    } else {
+        println("no");
+    }
+}

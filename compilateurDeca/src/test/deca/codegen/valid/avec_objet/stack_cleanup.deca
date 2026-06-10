@@ -1,0 +1,14 @@
+// Description:
+//    Appels de méthodes imbriqués pour vérifier le SUBSP.
+// Resultats:
+//    10
+// Historique: cree le 14/01/2026
+
+class Calc {
+    int add(int a, int b) { return a + b; }
+}
+{
+    Calc c = new Calc();
+    // L'appel interne c.add(1, 2) doit être nettoyé avant l'appel externe
+    println(c.add(c.add(1, 2), c.add(3, 4))); 
+}

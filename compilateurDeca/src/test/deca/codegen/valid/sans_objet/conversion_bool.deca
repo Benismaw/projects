@@ -1,0 +1,11 @@
+// Description:
+//    Vérifie que le résultat d'une comparaison est bien un booléen stockable.
+// Resultats:
+//    b1: true
+//    b2: false
+{
+    boolean b1 = (1 < 2);
+    boolean b2 = (1.5 >= 4.0);
+    if (b1) {println("b1: true"); }
+    if (!b2) {print("b2: false"); }
+}

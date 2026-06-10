@@ -1,0 +1,11 @@
+// Description:
+//
+//Teste une expression booléenne composée (comparaisons + && / || + priorité)
+// Historique:09/01/2026
+
+{
+    boolean b;
+    b= (4>2) && (3<=3) || false;
+    println(b);
+
+}

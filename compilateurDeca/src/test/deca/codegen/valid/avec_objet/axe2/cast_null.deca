@@ -1,0 +1,13 @@
+// Description:
+//    Vérifie qu'on peut caster null sans erreur.
+// Resultats:
+//    ok
+// Historique:
+//    cree le 14/01/2026
+
+class A {}
+
+{
+    A a = (A)(null);
+    println("ok");
+}

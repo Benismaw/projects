@@ -1,0 +1,16 @@
+// Description:
+//    Erreur : sortie de méthode non-void sans return.
+//
+// Resultats:
+//    Erreur : sortie de la methode A.perdu sans return
+// 
+// Historique: cree le 14/01/2026
+class A {
+    int perdu() {
+        // Ne fait rien, ne retourne rien
+    }
+}
+{
+    A a = new A();
+    a.perdu();
+}

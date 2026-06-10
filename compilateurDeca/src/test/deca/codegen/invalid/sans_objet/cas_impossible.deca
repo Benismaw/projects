@@ -1,0 +1,15 @@
+// Description:
+//    Erreur a l'execution : conversion de type impossible
+//
+// Resultats:
+//    Erreur : conversion impossible
+//
+// Historique:
+//    cree le 10/01/2026
+class A { }
+class B extends A { }
+{
+    A a = new A();
+    B b = (B)(a); // doit echouer a l'execution
+    println(0);
+}

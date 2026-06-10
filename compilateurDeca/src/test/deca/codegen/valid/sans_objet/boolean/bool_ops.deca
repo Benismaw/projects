@@ -1,0 +1,30 @@
+// Description:
+//    Test boolean operators
+//
+// Resultats:
+//    ok
+//    ok
+//    ok
+// 
+{
+    boolean a = true;
+    boolean b = false;
+
+    if (a && !b) {
+        println("ok");
+    } else {
+        println("no");
+    }
+
+    if (b || a) {
+        println("ok");
+    } else {
+        println("no");
+    }
+
+    if (!b) {
+        println("ok");
+    } else {
+        println("no");
+    }
+}

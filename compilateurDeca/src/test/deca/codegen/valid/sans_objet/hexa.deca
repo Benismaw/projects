@@ -1,0 +1,11 @@
+// Description:
+//    Test des flottants en hexadécimal (exactitude IEEE-754).
+// Resultats:
+//    f1 = 0x1p+1
+//    f2 = 0x1.8p+0
+{
+    float f1 = 0x1.0p1;    // 2.0
+    float f2 = 1.5;         // 0x1.8p0
+    printlnx("f1 = ", f1);
+    printlnx("f2 = ", f2);
+}

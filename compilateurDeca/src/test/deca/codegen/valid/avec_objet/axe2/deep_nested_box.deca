@@ -1,0 +1,47 @@
+// Description:
+//    Test de stress simulant des boîtes imbriquées.
+//    Teste l'allocation répétitive (new) et la sélection de champs très profonde.
+//    Vérifie la gestion des registres et des accès mémoire dans le tas.
+// Resultats:
+//    OK
+// Historique:
+//    cree le 14/01/2026
+
+class Box {
+    int content;
+    Box inner;
+
+    // Méthode pour imbriquer une nouvelle boîte
+    void nest(int value) {
+        Box newInner = new Box();
+        newInner.content = value;
+        newInner.inner = this.inner;
+        this.inner = newInner;
+    }
+}
+
+{
+    Box bigBox = new Box();
+    bigBox.content = 0;
+    
+    // On imbrique 10 niveaux
+    bigBox.nest(1);
+    bigBox.nest(2);
+    bigBox.nest(3);
+    bigBox.nest(4);
+    bigBox.nest(5);
+    bigBox.nest(6);
+    bigBox.nest(7);
+    bigBox.nest(8);
+    bigBox.nest(9);
+    bigBox.nest(10);
+
+    // Accès très profond : bigBox.inner (10) -> inner (9) -> ... -> inner (1)
+    // Chaque ".inner" génère un LOAD d(Rn), Rn et un test de nullité.
+    if (bigBox.inner.inner.inner.inner.inner.inner.inner.inner.inner.inner.content == 1 &&
+        bigBox.inner.inner.inner.inner.inner.content == 6) {
+        println("OK");
+    } else {
+        println("FAILURE");
+    }
+}

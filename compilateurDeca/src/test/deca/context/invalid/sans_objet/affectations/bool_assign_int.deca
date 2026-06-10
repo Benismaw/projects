@@ -1,0 +1,15 @@
+// Description:
+//    Sans-Objet
+//    Affectation
+//    Affectation incompatible (int vers boolean) :
+//
+// Resultats:
+//    Ligne 14: 
+//    impossible d'affecter int à boolean
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    boolean b = 1;
+}

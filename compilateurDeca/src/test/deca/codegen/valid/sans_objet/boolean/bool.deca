@@ -1,0 +1,12 @@
+// Description:
+//   Test interval
+// Resultats:
+//    ok
+{
+    int x = 3;
+    if (x >= 0 && x <= 5) {
+        println("ok");
+    } else {
+        println("error");
+    }
+}

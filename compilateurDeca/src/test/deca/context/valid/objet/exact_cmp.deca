@@ -1,0 +1,41 @@
+// Description:
+//    Test exhaustif des comparaisons valides (== et !=).
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+class B extends A {}
+
+{
+    int i = 1;
+    float f = 1.0;
+    boolean b = true;
+    A a = new A();
+    B bb = new B();
+    Object o = new A();
+
+    boolean res;
+
+    // 1. Numériques (Règle Arithmétique)
+    res = (i == i);
+    res = (f == f);
+    res = (i == f);
+    res = (f == i);
+    res = (i != f);
+
+    // 2. Booléens
+    res = (b == false);
+    res = (true != b);
+
+    // 3. Objets
+    res = (a == a);
+    res = (a == bb);
+    res = (a == o);
+    res = (a == null);
+    res = (null == bb);
+    res = (null == null);
+}

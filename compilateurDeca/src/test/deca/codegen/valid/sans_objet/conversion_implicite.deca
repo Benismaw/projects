@@ -1,0 +1,13 @@
+// Description:
+//    Comparaison entre entiers et flottants (conversion implicite).
+// Resultats:
+//    OK
+{
+    int i = 10;
+    float f = 10.0;
+    if (i == f && f <= 11) {
+        println("OK");
+    } else {
+        println("KO");
+    }
+}

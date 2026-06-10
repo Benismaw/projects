@@ -1,0 +1,15 @@
+// Description:
+//    Test de contexte : comparaison > entre un objet et null
+//
+// Resultats:
+//    Erreur contextuelle
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+{
+  A a = new A();
+  if (a > null) {
+  }
+}

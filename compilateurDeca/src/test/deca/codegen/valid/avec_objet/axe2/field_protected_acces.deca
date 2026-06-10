@@ -1,0 +1,23 @@
+// Description:
+//    Accès valide à un champ protégé depuis une sous-classe.
+//
+// Resultats:
+//    10
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class Mere {
+    protected int secret = 10;
+}
+
+class Fille extends Mere {
+    void printSecret() {
+        println(this.secret); // OK : Fille est sous-type de Mere
+    }
+}
+
+{
+    Fille f = new Fille();
+    f.printSecret();
+}

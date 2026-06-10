@@ -1,0 +1,19 @@
+
+
+// Description:
+//
+// Teste branchments multiples
+// Historique:09/01/2026
+{
+    int x;
+    x=2;
+    if (x==0){
+        println(0);
+    }
+    else if(x==1){
+        println(1);
+    }
+    else{
+        println(2);
+    }
+}

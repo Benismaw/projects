@@ -1,0 +1,24 @@
+// Description:
+//    Déclaration de méthode avec signature complexe (int, float, bool, Class).
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+
+class B {
+    // Méthode avec 0 param
+    void m0() {}
+
+    // Méthode avec tous les types possibles
+    boolean mComplex(int a, float b, boolean c, A d, Object e) {
+        return c;
+    }
+}
+{
+    B b = new B();
+    boolean res = b.mComplex(1, 2.5, true, null, new A());
+}

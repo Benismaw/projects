@@ -1,0 +1,9 @@
+// Description:
+//    Test du comportement de l'opérateur % avec des entiers négatifs.
+// Resultats:
+//    -1
+//     1
+{
+    println(-5 % 2);  // Résultat attendu : -1
+    println(5 % -2);  // Résultat attendu : 1
+}

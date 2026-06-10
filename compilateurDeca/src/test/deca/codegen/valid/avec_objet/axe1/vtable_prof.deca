@@ -1,0 +1,21 @@
+// Description:
+//    Héritage multi-niveaux (5 niveaux). Vérifie que l'appel de méthode remonte 
+//    correctement la hiérarchie pour trouver la définition originale.
+// Resultats:
+//    Succes
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void message() { println("Succes"); }
+}
+class B extends A {}
+class C extends B {}
+class D extends C {}
+class E extends D {}
+
+{
+    E e = new E();
+    e.message(); // Doit appeler A.message
+}
+

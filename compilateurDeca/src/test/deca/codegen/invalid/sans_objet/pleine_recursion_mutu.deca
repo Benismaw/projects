@@ -1,0 +1,15 @@
+// Description:
+//    Erreur a l'execution : recursion mutuelle
+//
+// Resultats:
+//    Erreur : pile pleine
+//
+// Historique:
+//    cree le 10/01/2026
+class A {
+    void f() { this.g(); }
+    void g() { this.f(); }
+}
+{
+    new A().f();
+}

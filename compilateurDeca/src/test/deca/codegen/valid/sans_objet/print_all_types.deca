@@ -1,0 +1,13 @@
+// Description:
+//    Couverture exhaustive des procédures d'affichage et de tous les types imprimables.
+// Resultats:
+//    Entier: 1, Flottant: 1.50000e+00
+//    Hexa: 0x1.8p+0
+{
+    int i = 1;
+    float f = 1.5;
+    print("Entier: ", i, ", Flottant: ", f);
+    println(); 
+    printx("Hexa: ", f);
+    printlnx();
+}

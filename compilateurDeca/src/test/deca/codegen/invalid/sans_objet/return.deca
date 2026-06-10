@@ -1,0 +1,16 @@
+// Description:
+//    Generate erreur de execution pour abs sans return
+// Resultats:
+//    Erreur : sortie de la methode Q.abs sans return
+class Q {
+    float abs(float x) {
+        if (x < 0.0) {
+            return -x;
+        }
+ 
+    }
+}
+{
+    Q q = new Q();
+    println(q.abs(1.0));
+}

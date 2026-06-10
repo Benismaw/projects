@@ -1,0 +1,17 @@
+// Description:
+//    Erreur a l'execution : debordement de pile par recursion infinie
+//
+// Resultats:
+//    Erreur : pile pleine
+//
+// Historique:
+//    cree le 10/01/2026
+class A {
+    void f() {
+        this.f();
+    }
+}
+{
+    A a = new A();
+    a.f();
+}

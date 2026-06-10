@@ -1,0 +1,11 @@
+
+
+// Description:
+//
+//Teste les châines de caractéres
+// Historique:09/01/2026
+{
+int x;
+x=4;
+println("x=", x, "ok");
+}

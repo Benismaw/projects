@@ -1,0 +1,21 @@
+// Description:
+//    Liaison dynamique avec type de retour boolean.
+// Resultats:
+//    Succes
+// Historique:
+//    cree le 14/01/2026
+
+class Super {
+    boolean isOk() { return false; }
+}
+class Sub extends Super {
+    boolean isOk() { return true; }
+}
+{
+    Super s = new Sub();
+    if (s.isOk()) {
+        println("Succes");
+    } else {
+        println("Echec");
+    }
+}

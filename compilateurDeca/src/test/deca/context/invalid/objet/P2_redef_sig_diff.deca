@@ -1,0 +1,6 @@
+class A {
+    void m(int x) {}
+}
+class B extends A {
+    void m(float x) {} // Erreur : signature différente (int != float)
+}

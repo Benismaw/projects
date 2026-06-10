@@ -1,0 +1,19 @@
+// Description:
+//    Vérifie toutes les combinaisons de types pour l'opérateur MINUS.
+//
+// Resultats:
+//    Vérification réussie (décoration et ConvFloat)
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    int i = 1;
+    float f = 1.0;
+    float r;
+
+    int res1 = i - i; 
+    r = f - f;    
+    r = i - f;   
+    r = f - i;  
+}

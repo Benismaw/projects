@@ -1,0 +1,20 @@
+// Description:
+//    Tests boolean logic
+//
+// Results:
+//    Success
+//
+// History:
+//    created 11/01/2026
+
+{
+    boolean t = true;
+    boolean f = false;
+    boolean res;
+
+    res = t && f;
+    res = t || f;
+    res = !t;
+    res = !f;
+    res = (t && t) || f;
+}

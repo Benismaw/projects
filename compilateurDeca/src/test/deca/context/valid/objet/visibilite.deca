@@ -1,0 +1,30 @@
+// Description:
+//    Test de contexte : Accès valide aux champs protégés (protected).
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class Mere {
+    protected int secret;
+}
+
+class Fille extends Mere {
+    void modifier() {
+        secret = 10;
+        this.secret = 20;
+    }
+
+    void modifierAutre(Fille f) {
+        f.secret = 30;
+    }
+}
+
+{
+    Fille f = new Fille();
+    Fille f2 = new Fille();
+    f.modifier();
+    f.modifierAutre(f2);
+}

@@ -1,0 +1,81 @@
+class Niveau {
+    int width;
+    int height;
+    Monstre m1;
+    Monstre m2;
+    int doorX;
+    int doorY;
+    boolean isBossLevel;
+
+    void initLevel1() {
+        width = 10;
+        height = 6;
+        isBossLevel = false;
+        m1 = new Monstre();
+        m1.initMonstre(5, 3, 20, 2); // Position 5, 3
+        
+        // Second monster top right (width=10 -> x=8 or 9? Walls are 0 and 9. Top is y=0/1. Inner top right: x=8, y=1)
+        m2 = new Monstre();
+        m2.initMonstre(8, 1, 30, 4); // Stronger than m1, gives fireball
+        
+        doorX = 8; // Near end
+        doorY = 4; // Near end
+    }
+
+    void initLevel2() {
+        width = 10;
+        height = 6;
+        isBossLevel = true;
+        m1 = new Monstre();
+        m1.initMonstre(5, 3, 60, 8); // Boss: Plus fort
+        m2 = new Monstre();
+        m2.initMonstre(-100, -100, 0, 0); // No m2 in level 2 (or dead)
+        
+        doorX = -100; // Pas de porte
+        doorY = -100;
+    }
+
+    boolean estMur(int x, int y) {
+        if (x <= 0 || x >= width - 1) { return true; }
+        if (y <= 0 || y >= height - 1) { return true; }
+        return false;
+    }
+
+    void afficher(Hero h) {
+        int y = 0;
+        int x;
+        while (y < height) {
+            x = 0;
+            while (x < width) {
+                if (x == h.x && y == h.y) {
+                    print("h");
+                } else if (!m1.estMort() && x == m1.x && y == m1.y) {
+                    print("M");
+                } else if (!m2.estMort() && x == m2.x && y == m2.y) {
+                    print("M");
+                } else if (!isBossLevel && x == doorX && y == doorY) {
+                    print("P");
+                } else if (y == 0 || y == height - 1) {
+                    print("-");
+                } else if (x == 0 || x == width - 1) {
+                    print("|");
+                } else {
+                    print("_");
+                }
+                x = x + 1;
+            }
+            println("");
+            y = y + 1;
+        }
+    }
+
+    Monstre getMonstre(int x, int y) {
+        if (!m1.estMort() && m1.x == x && m1.y == y) {
+            return m1;
+        }
+        if (!m2.estMort() && m2.x == x && m2.y == y) {
+            return m2;
+        }
+        return null;
+    }
+}

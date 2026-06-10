@@ -1,0 +1,14 @@
+// Description:
+//    Instructions (print, if, etc.) directement dans le corps de la classe.
+//
+// Resultats:
+//    Erreur syntaxique ligne 11
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    println("Hello");
+}
+{
+}

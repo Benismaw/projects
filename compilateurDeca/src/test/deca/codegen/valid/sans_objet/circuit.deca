@@ -1,0 +1,19 @@
+// Description:
+//    Test de l'évaluation paresseuse (court-circuit).
+// Resultats:
+//    OK
+//    OK
+{
+    // Si court-circuit fonctionne, la division par zéro n'a pas lieu
+    if (false && (1 / 0 == 0)) {
+        println("KO");
+    } else {
+        println("OK");
+    }
+
+    if (true || (1 / 0 == 0)) {
+        println("OK");
+    } else {
+        println("KO");
+    }
+}

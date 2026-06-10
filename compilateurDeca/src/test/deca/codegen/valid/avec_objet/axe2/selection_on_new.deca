@@ -1,0 +1,16 @@
+// Description:
+//    Sélection de champ et méthode directement sur un 'new'.
+// Resultats:
+//    Champ: 10
+//    Methode: 20
+// Historique: cree le 14/01/2026
+
+class A {
+    int x = 10;
+    int getX() { return 20; }
+}
+
+{
+    println("Champ: ", (new A()).x);
+    println("Methode: ", (new A()).getX());
+}

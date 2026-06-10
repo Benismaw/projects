@@ -1,0 +1,16 @@
+// Description:
+//    Test de contexte : Cast entre types disjoints.
+//
+// Resultats:
+//    Erreur contextuelle : Cast invalide entre A et B.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+class B {}
+
+{
+    A a = new A();
+    B b = (B) (a);
+}

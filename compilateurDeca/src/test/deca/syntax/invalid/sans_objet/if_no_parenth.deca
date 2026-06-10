@@ -1,0 +1,11 @@
+
+//Description
+//
+//Teste un if sans parenthèses
+// Historique:
+//    cree le 08/01/2026
+{
+    if true{
+        print(2);
+    }
+}

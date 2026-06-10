@@ -1,0 +1,13 @@
+// Description:
+//    Lecture int n puis boucle while: compte a rebours
+//
+// Resultats:
+//    Affiche n, n-1, ..., 0 
+{
+    int n;
+    n = readInt();
+    while (n >= 0) {
+        println(n);
+        n = n - 1;
+    }
+}

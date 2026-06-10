@@ -1,0 +1,19 @@
+// Description:
+//    Erreur : sortie de méthode sans return dans une branche else.
+//
+// Resultats:
+//    Erreur : sortie de la methode A.check sans return
+// 
+// Historique: cree le 14/01/2026
+class A {
+    int check(int n) {
+        if (n > 0) {
+            return 1;
+        }
+        // Branche else implicite sans return
+    }
+}
+{
+    A a = new A();
+    a.check(-1);
+}

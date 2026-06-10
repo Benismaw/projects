@@ -1,0 +1,17 @@
+// Description:
+//    Sans-Objet
+//    Affectation
+//    operateur declaré deux fois;
+//
+// Resultats:
+//    Ligne 16: 
+//     opération partielle : Variable 'a' déjà déclarée dans ce bloc
+// 
+// Historique:
+//    cree le 06/01/2026
+
+{
+    int a = 1;
+
+    float a;
+}

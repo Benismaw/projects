@@ -1,0 +1,26 @@
+// Description:
+//    Test de contexte : Redéfinition (Override) valide de méthode.
+//    La signature doit être identique.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    int getVal(boolean b) {
+        return 0;
+    }
+}
+
+class B extends A {
+    int getVal(boolean check) {
+        return 1;
+    }
+}
+
+{
+    A a = new B();
+    int x = a.getVal(true);
+}

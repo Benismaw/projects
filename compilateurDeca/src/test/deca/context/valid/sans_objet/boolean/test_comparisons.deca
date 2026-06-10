@@ -1,0 +1,32 @@
+// Description:
+//    Tests comparisons
+//
+// Results:
+//    Success
+//
+// History:
+//    created 11/01/2026
+
+{
+    int i = 1;
+    int j = 2;
+    float x = 1.0;
+    float y = 2.0;
+    boolean res;
+
+    res = i < j;
+    res = i > j;
+    res = i <= j;
+    res = i >= j;
+    res = i == j;
+    res = i != j;
+
+    res = x < y;
+    res = x == y;
+
+    res = i < x;
+    res = y >= j;
+    
+    res = true == false;
+    res = true != false;
+}

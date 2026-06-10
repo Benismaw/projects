@@ -1,0 +1,16 @@
+// Description:
+//    Mélange de paramètres et de variables locales.
+// Resultats:
+//    30
+// Historique: cree le 14/01/2026
+class Stack {
+    int mix(int a, int b) {
+        int loc1 = 5;
+        int loc2 = 10;
+        return a + b + loc1 + loc2;
+    }
+}
+{
+    Stack s = new Stack();
+    println(s.mix(7, 8));
+}

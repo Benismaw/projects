@@ -1,0 +1,13 @@
+
+// Description:
+//    Test print/println avec plusieurs valeurs
+//
+// Resultats:
+//    Affiche: x puis x+1 sur la meme ligne, puis newline
+{
+    int x;
+    x = readInt();
+    print(x);
+    print(" ");
+    println(x + 1);
+}

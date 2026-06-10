@@ -1,0 +1,10 @@
+
+// Description:
+//
+//Teste expression arithmetique avec priorité
+// Historique:09/01/2026
+
+{
+    int x;
+    x= 4-3*(2+1);
+}

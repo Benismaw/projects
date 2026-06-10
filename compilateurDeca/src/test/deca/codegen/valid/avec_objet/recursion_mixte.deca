@@ -1,0 +1,19 @@
+// Description:
+//    Test mixte combinant multiplication, division, modulo et soustraction
+// Resultats:
+//    Resultat mixte: 14
+// Historique:
+//    cree le 18/01/2026
+class MixedRecursion {
+    int compute(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+        // Expression mélangeant plusieurs opérateurs
+        return (n * 2) + (compute(n - 1) / 2) % n;
+    }
+}
+{
+    MixedRecursion m = new MixedRecursion();
+    println("Resultat mixte: ", m.compute(5));
+}

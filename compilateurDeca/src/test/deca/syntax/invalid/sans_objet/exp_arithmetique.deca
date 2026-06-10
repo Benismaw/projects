@@ -1,0 +1,10 @@
+// Description:
+//    Sans-Objet 
+//Teste expression arithmetique invalide
+// Historique:
+//    cree le 08/01/2026
+
+{
+    int x;
+    x= 1+ ;
+}

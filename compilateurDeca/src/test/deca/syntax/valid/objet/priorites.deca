@@ -1,0 +1,26 @@
+// Description:
+//    Test des priorités : Cast, Sélection (.), et opérations arithmétiques.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    float f;
+}
+{
+    Object o;
+    float res;
+
+    // Contextuellement faux
+    res = (float) o.f;
+
+    res = ((A)o).f;
+
+    // Priorité AND/OR/INSTANCEOF
+    if ( o instanceof A && ((A)o).f > 0.0 ) {
+        println("Ok");
+    }
+}

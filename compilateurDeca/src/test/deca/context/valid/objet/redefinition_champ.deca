@@ -1,0 +1,19 @@
+// Description:
+//    Test de contexte : redéfinition d'un champ.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    int x;
+}
+class B extends A {
+    float x;
+}
+{
+    B b = new B();
+    b.x = 2.5;
+}

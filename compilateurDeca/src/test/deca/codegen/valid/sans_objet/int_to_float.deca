@@ -1,0 +1,13 @@
+// Description:
+//    tests multi declaration 
+//
+// Resultats:
+//   3.50000e+00
+// 
+// Historique:09/01/2026
+
+{
+    int a=1;
+    float b= 2.5;
+    println(a+b);
+}

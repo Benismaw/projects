@@ -1,0 +1,17 @@
+// Description:
+//    Liaison dynamique avec type de retour float.
+// Resultats:
+//    2.50000e+00
+// Historique:
+//    cree le 14/01/2026
+
+class Super {
+    float getFloat() { return 1.0; }
+}
+class Sub extends Super {
+    float getFloat() { return 2.5; }
+}
+{
+    Super s = new Sub();
+    println(s.getFloat()); 
+}

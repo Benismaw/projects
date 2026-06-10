@@ -1,0 +1,17 @@
+// Description:
+//    Appels de méthodes internes via this implicite et explicite.
+// Resultats:
+//    Coucou
+//    Coucou
+// Historique: cree le 14/01/2026
+class A {
+    void message() { println("Coucou"); }
+    void test() {
+        message();      // this implicite
+        this.message(); // this explicite
+    }
+}
+{
+    A a = new A();
+    a.test();
+}

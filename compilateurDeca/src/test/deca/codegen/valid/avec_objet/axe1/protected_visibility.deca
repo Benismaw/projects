@@ -1,0 +1,27 @@
+// Description:
+//    Vérifie l'accès à un champ protégé via l'héritage.
+//
+// Resultats:
+//    10
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    protected int x;
+}
+
+class B extends A {
+    void setX(int val) {
+        this.x = val; // Accès autorisé par la règle 3.66
+    }
+    int getX() {
+        return this.x;
+    }
+}
+
+{
+    B b = new B();
+    b.setX(10);
+    println(b.getX());
+}

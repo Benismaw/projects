@@ -1,0 +1,12 @@
+// Description:
+//    Vérifie que l'opération de division est interdite sur les booléens.
+//
+// Resultats:
+//    Ligne 11: l'opération divide n'est pas définie pour le type boolean .
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    boolean b = true / false; 
+}

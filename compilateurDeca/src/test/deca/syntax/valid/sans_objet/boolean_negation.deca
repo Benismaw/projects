@@ -1,0 +1,5 @@
+// test negation booleenne
+{
+    boolean b;
+    b = !false;
+}

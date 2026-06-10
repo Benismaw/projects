@@ -1,0 +1,14 @@
+// Description:
+//    Vérifie que le cast de null vers une classe ne provoque pas d'erreur.
+// Resultats:
+//    OK
+// Historique:
+//    cree le 14/01/2026
+
+class A {}
+{
+    A a = (A)(null);
+    if (a == null) {
+        println("OK");
+    }
+}

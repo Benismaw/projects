@@ -1,0 +1,12 @@
+// Description:
+//    Vérifie qu'une instance de classe fille est reconnue comme instance de sa mère .
+// Resultats:
+//    true
+// Historique:
+//    cree le 14/01/2026
+class Mere {}
+class Fille extends Mere {}
+{
+    Fille f = new Fille();
+    if (f instanceof Mere) { println("true"); }
+}

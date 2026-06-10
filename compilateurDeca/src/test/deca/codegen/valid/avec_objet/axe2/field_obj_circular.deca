@@ -1,0 +1,21 @@
+// Description:
+//    Initialisation d'un champ par une nouvelle instance (allocation dans .init).
+// Resultats:
+//    42
+// Historique:
+//    cree le 14/01/2026
+
+class Value {
+    int val = 42;
+}
+
+class Container {
+    Value v = new Value();
+}
+
+{
+    Container c = new Container();
+    if (c.v != null) {
+        println(c.v.val);
+    }
+}

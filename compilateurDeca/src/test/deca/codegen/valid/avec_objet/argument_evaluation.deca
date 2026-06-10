@@ -1,0 +1,20 @@
+// Description:
+//    Vérifie l'ordre d'évaluation des paramètres (gauche à droite).
+// Resultats:
+//    Eval: 1
+//    Eval: 2
+//    Somme: 3
+// Historique: cree le 14/01/2026
+class Order {
+    int printAndReturn(int n) {
+        println("Eval: ", n);
+        return n;
+    }
+    void test(int a, int b) {
+        println("Somme: ", a + b);
+    }
+}
+{
+    Order o = new Order();
+    o.test(o.printAndReturn(1), o.printAndReturn(2));
+}

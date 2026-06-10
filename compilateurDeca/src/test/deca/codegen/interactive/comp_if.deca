@@ -1,0 +1,14 @@
+// Description:
+//    Lecture int et test if/else
+//
+// Resultats:
+//    Affiche "OK" si x >= 0 sinon "non"
+{
+    int x;
+    x = readInt();
+    if (x >= 0) {
+        println("OK");
+    } else {
+        println("non");
+    }
+}

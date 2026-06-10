@@ -1,0 +1,9 @@
+
+//Description
+//
+// Teste une chaîne de caractères non fermée dans println
+// Historique:
+//    cree le 08/01/2026
+{
+    println("abc";
+}

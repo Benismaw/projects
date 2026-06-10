@@ -1,0 +1,5 @@
+// Description: Test d'un flottant non nul trop petit (Underflow)
+// Resultats: Ligne 4 : Littéral flottant hors limites
+{
+    float f = 1.0e-46; // Trop petit pour être représenté
+}

@@ -1,0 +1,11 @@
+// Description:
+//    Extends sans IDENT
+// Resultats:
+//    Missing IDENT
+//
+// Historique:
+//    cree le 15/01/2026
+class B extends {
+}
+{
+}

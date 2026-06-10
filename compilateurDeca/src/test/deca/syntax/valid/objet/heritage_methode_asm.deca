@@ -1,0 +1,18 @@
+// Description:
+//    Héritage (extends) et méthode écrite en assembleur.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A extends Object {
+    void m() asm ("
+        LOAD #1, R0
+        RTS
+    ");
+}
+
+{
+}

@@ -1,0 +1,11 @@
+// Description:
+//    Test de contexte : Double déclaration de classe
+//
+// Resultats:
+//    Erreur contextuelle : Nom de classe déjà déclaré
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A { }
+class A { }

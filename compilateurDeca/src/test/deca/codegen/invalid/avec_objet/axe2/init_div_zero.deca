@@ -1,0 +1,14 @@
+// Description:
+//    Initialisation d'un champ par une division par zéro (erreur runtime).
+// Resultats:
+//    Erreur : division par zero
+// Historique:
+//    cree le 14/01/2026
+
+class ErrorInit {
+    int x = 1 / 0;
+}
+
+{
+    new ErrorInit();
+}

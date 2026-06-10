@@ -1,0 +1,17 @@
+// Description:
+//    Sans-Objet - Types
+//    Vérifie l'ajout de nœuds ConvFloat sur tous les opérateurs arithmétiques et comparaisons mixtes.
+//
+// Resultats:
+//    Vérification contextuelle réussie (décoration complète).
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    float f = 1;      // Affectation int -> float (ConvFloat)
+    f = f + 1;        // Addition mixte 
+    f = 2 * f;        // Multiplication mixte
+    f = f / 3;        // Division mixte
+    if (f > 0) { }    // Comparaison mixte 
+}

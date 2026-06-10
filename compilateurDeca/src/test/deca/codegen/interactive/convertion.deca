@@ -1,0 +1,10 @@
+// Description:
+//    Lecture int, melange int/float, precedence
+//
+{
+    int x;
+    float y;
+    x = readInt();
+    y = 1.5 + x * 2;
+    println(y);
+}

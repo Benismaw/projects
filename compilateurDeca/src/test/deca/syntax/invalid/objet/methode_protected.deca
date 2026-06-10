@@ -1,0 +1,16 @@
+// Description:
+//    Erreur de syntaxe : une méthode ne peut pas être 'protected' en Deca.
+//    Seuls les champs peuvent avoir une visibilité.
+//
+// Resultats:
+//    Erreur syntaxique ligne 12
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    protected void m() {
+    }
+}
+{
+}

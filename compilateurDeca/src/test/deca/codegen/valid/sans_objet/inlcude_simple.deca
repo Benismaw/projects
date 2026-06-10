@@ -1,0 +1,9 @@
+// Description:
+//    Test de l'inclusion simple de fichier.
+// Resultats:
+//    42
+{
+    #include "included_file.decah"
+    println(x);
+}
+

@@ -1,0 +1,10 @@
+
+//Description
+//
+////Teste une commentaire mal formé
+// Historique:
+//    cree le 08/01/2026
+{
+    */commentaire
+    int x;
+} 

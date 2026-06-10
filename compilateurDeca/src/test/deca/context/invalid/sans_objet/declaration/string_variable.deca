@@ -1,0 +1,12 @@
+// Description:
+//    Erreur de contexte : tentative d'utiliser 'string' comme type.
+//
+// Resultats:
+//    Erreur contextuelle
+//
+// Historique:
+//    cree le 13/01/2026
+
+{
+    string s = "Hello";
+}

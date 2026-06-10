@@ -1,0 +1,10 @@
+// Description:
+//    Lecture entier 
+//
+// Resultats:
+//    Affiche x+1
+{
+    int x;
+    x = readInt();
+    println(x + 1);
+}

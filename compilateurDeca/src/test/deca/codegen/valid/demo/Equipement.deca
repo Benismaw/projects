@@ -1,0 +1,9 @@
+class Equipement {
+    int bonusAtk;
+    int bonusHp;
+
+    void setBonus(int atk, int hp) {
+        this.bonusAtk = atk;
+        this.bonusHp = hp;
+    }
+}

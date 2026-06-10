@@ -1,0 +1,16 @@
+// Description:
+//    Erreur de syntaxe : 'return;' sans expression.
+//
+// Resultats:
+//    Erreur syntaxique ligne 12
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    void m() {
+        return;
+    }
+}
+{
+}

@@ -1,0 +1,9 @@
+// Description:
+//    Stockage du résultat d'une comparaison complexe dans une variable.
+// Resultats:
+//    true
+{
+    int x = 5;
+    boolean b = (x > 0 && x < 10) || (x == -1);
+    if (b) { println("true"); }
+}

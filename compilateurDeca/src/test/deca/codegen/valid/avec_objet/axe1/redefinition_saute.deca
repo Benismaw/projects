@@ -1,0 +1,23 @@
+// Description:
+//    Méthode définie dans A,héritée telle quelle par B,redéfinie par C.
+//
+// Resultats:
+//    C
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void identification() { println("A"); }
+}
+
+class B extends A { }
+
+class C extends B {
+    void identification() { println("C"); }
+}
+
+{
+    A obj = new C();
+    obj.identification(); // doit afficher C car l'index reste le même
+}

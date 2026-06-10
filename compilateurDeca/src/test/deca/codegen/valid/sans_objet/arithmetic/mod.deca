@@ -1,0 +1,19 @@
+// Description:
+//    Test modulo operator
+//
+// Resultats:
+//    1
+//    2
+//    0
+// 
+{
+    int a = 10;
+    int b = 3;
+    println(a % b); // 1
+    
+    a = 20;
+    b = 6;
+    println(a % b); // 2
+
+    println(10 % 2); // 0
+}

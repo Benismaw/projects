@@ -1,0 +1,13 @@
+//Test : Redéfinition correcte de la méthode equals héritée d'Object
+class MyClass {
+    boolean equals(Object other) {
+        return true;
+    }
+}
+
+{
+    MyClass c = new MyClass();
+    if (c.equals(c)) {
+        println("Ok");
+    }
+}

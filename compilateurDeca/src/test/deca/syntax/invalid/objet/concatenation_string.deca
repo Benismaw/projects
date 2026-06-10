@@ -1,0 +1,14 @@
+// Description:
+//    Erreur de syntaxe : asm attend une chaine unique ("..."), pas une concaténation
+//
+// Resultats:
+//    Erreur syntaxique ligne 12
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    void m() asm ("LOAD #1, R0" + "RTS");
+}
+{
+}

@@ -1,0 +1,21 @@
+
+// Description:
+//    Sans-Objet
+//    Structures de controle
+//    la condition doit être de type boolean 
+//
+// Resultats:
+//    Ligne 16: 
+//    Condition non booléenne
+// 
+// Historique:
+//    cree le 06/01/2026
+
+
+{
+    int a = 0;
+
+    if( a + 1){
+
+    }
+}

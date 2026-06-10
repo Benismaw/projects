@@ -1,0 +1,16 @@
+// Description:
+//    Somme 1..n 
+//
+// Resultats:
+//    Affiche somme n>=0
+{
+    int n; int i; int s;
+    n = readInt();
+    i = 1;
+    s = 0;
+    while (i <= n) {
+        s = s + i;
+        i = i + 1;
+    }
+    println(s);
+}

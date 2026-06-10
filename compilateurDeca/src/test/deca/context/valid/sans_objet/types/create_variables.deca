@@ -1,0 +1,18 @@
+// Description:
+//    Sans-Objet
+//    Affectation
+//  
+//
+// Resultats:
+//    compilation bonne
+//        
+// 
+// Historique:
+//    cree le 06/01/2026
+
+{
+    int a = 1;
+    float b = 2.0;
+    boolean c = true;
+    println("string");
+}

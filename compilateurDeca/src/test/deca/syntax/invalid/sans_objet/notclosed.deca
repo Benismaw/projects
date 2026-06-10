@@ -1,0 +1,9 @@
+
+//Description
+//
+//Teste bloc non fermé
+// Historique:
+//    cree le 08/01/2026
+{
+    int x;
+    x=1; 

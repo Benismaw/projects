@@ -1,0 +1,14 @@
+// Description:
+//    Lecture int d et division protege
+//
+// Resultats:
+//    Si d==0 affiche "ZERO", sinon affiche 100/d
+{
+    int d;
+    d = readInt();
+    if (d == 0) {
+        println("ZERO");
+    } else {
+        println(100 / d);
+    }
+}

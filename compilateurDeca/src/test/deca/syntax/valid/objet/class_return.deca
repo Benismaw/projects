@@ -1,0 +1,13 @@
+// Description:
+//   Paramètres de type classe + retour de type classe
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 15/01/2026
+class A { }
+class B {
+    A id(A a) { return a; }
+}
+{
+}

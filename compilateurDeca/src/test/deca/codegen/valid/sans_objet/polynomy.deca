@@ -1,0 +1,16 @@
+// Description:
+//    Evaluation polynomiale simple (Horner)
+//
+// Resultats:
+//    11
+{
+    int x = 3;
+    int p;
+
+    // p(x) = 2x^2 - 3x + 2
+    // Horner: (2x - 3)x + 2
+    // x=3: (6-3)*3 + 2 = 3*3 + 2 = 11
+    p = (2*x - 3)*x + 2;
+
+    println(p);
+}

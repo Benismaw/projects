@@ -1,0 +1,7 @@
+// Description: Vérifie que le vrai zéro est accepté par la regex
+// Resultats: Pas d'erreur
+{
+    float f1 = 0.0;
+    float f2 = 0.0e0;
+    float f3 = 0;
+}

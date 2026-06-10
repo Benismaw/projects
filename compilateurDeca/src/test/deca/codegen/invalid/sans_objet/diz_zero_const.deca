@@ -1,0 +1,8 @@
+// Description:
+//    Runtime error: division par zero via expression constante 
+//
+// Resultats:
+//    Erreur d'execution
+{
+    println(10 / (1 - 1));
+}

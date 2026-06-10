@@ -1,0 +1,18 @@
+// Description :
+//    Test de la hiérarchie des priorités entre !, &&, ||, == et +.
+//    Vérifie également l'évaluation paresseuse et l'ordre gauche-droite.
+//
+// Resultats :
+//    OK
+//
+// Historique :
+//    Cree le 14/01/2026
+
+{
+    
+    if (!true || true && 1 + 1 == 2) {
+        println("OK");
+    } else {
+        println("KO");
+    }
+}

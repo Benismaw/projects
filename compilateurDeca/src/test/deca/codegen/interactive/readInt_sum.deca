@@ -1,0 +1,11 @@
+// Description:
+//    Lecture de deux entiers et somme
+//
+// Resultats:
+//    Affiche a+b
+{
+    int a; int b;
+    a = readInt();
+    b = readInt();
+    println(a + b);
+}

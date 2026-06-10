@@ -1,0 +1,20 @@
+// Description:
+//    Initialisation de champs booléens par défaut et par expressions logiques.
+// Resultats:
+//    false true false
+// Historique:
+//    cree le 14/01/2026
+
+class BoolBox {
+    boolean b1; // false par défaut
+    boolean b2 = true || false;
+    boolean b3 = (5 > 10) && b2;
+}
+
+{
+    BoolBox box = new BoolBox();
+    if (!box.b1) { print("false "); }
+    if (box.b2) { print("true "); }
+    if (!box.b3) { print("false"); }
+}
+

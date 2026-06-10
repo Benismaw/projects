@@ -1,0 +1,12 @@
+// Description:
+//    Déréférencement de null dans une chaîne profonde (a.b.x avec b null).
+// Resultats:
+//    Erreur : dereferencement de null
+// Historique:
+//    cree le 14/01/2026
+class B { int x; }
+class A { B b; }
+{
+    A a = new A();
+    println(a.b.x);
+}

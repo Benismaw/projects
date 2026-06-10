@@ -1,0 +1,18 @@
+// Description:
+//     Vérifie que instanceof remonte plusieurs niveaux d'héritage .
+// Resultats:
+//    true true true
+// Historique:
+//    cree le 14/01/2026
+class A {}
+class B extends A {}
+class C extends B {}
+class D extends C {}
+{
+    D d = new D();
+    if (d instanceof A) { print("true "); } // Remonte 3 niveaux
+    if (d instanceof B) { print("true "); } // Remonte 2 niveaux
+    if (d instanceof Object) { println("true"); } // Remonte à la racine 
+}
+
+

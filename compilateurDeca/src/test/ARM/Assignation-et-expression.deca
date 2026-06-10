@@ -1,0 +1,7 @@
+{
+    int x = 10;
+    // Démonstration de l'évaluation séquentielle et de l'assignation en tant qu'expression
+    println("Avant: ", x);
+    println("Test: ", x, x = 11);
+    println("Après: ", x);
+}

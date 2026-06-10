@@ -1,0 +1,22 @@
+// Description:
+//    Vérifie que les expressions booléennes sont évaluées paresseusement
+// Resultats:
+//    Count: 1
+// Historique:
+//    cree le 14/01/2026
+class Checker {
+    int count = 0;
+    boolean incrementAndGet(boolean val) {
+        count = count + 1;
+        return val;
+    }
+}
+{
+    Checker c = new Checker();
+    if (c.incrementAndGet(false) && c.incrementAndGet(true)) {
+        println("Fail");
+    } else {
+        // La deuxième méthode ne doit PAS être appelée car la première est false
+        println("Count: ", c.count);
+    }
+}

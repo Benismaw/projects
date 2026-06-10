@@ -1,0 +1,30 @@
+// Description:
+//    Récursion croisée entre deux objets pour tester les blocs d'activation.
+// Resultats:
+//    Ping: 3
+//    Pong: 2
+//    Ping: 1
+//    Pong: 0
+//    Terminé
+// Historique: cree le 14/01/2026
+class Ping {
+    void doPing(Pong p, int n) {
+        if (n > 0) {
+            println("Ping: ", n);
+            p.doPong(this, n - 1);
+        } else { println("Terminé"); }
+    }
+}
+class Pong {
+    void doPong(Ping p, int n) {
+        if (n >= 0) {
+            println("Pong: ", n);
+            p.doPing(this, n - 1);
+        }
+    }
+}
+{
+    Ping p = new Ping();
+    Pong q = new Pong();
+    p.doPing(q, 3);
+}

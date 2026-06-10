@@ -1,0 +1,17 @@
+// Description:
+//    Test de contexte : comparaison > entre un objet et un objet
+//
+// Resultats:
+//    Erreur contextuelle
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+class B {}
+{
+    A a = new A();
+    B b = new B();
+    if (a > b) {
+    }
+}

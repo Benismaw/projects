@@ -1,0 +1,5 @@
+// Description: Test d'un flottant trop grand (Overflow)
+// Resultats: Ligne 4 : Littéral flottant hors limites
+{
+    float f = 3.4028236e+39; // Dépasse la capacité du float 32 bits
+}

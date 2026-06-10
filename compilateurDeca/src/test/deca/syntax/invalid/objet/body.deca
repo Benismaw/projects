@@ -1,0 +1,13 @@
+// Description:
+//   Déclaration de méthode sans corps 
+// Resultats:
+//    Echec (erreur de syntaxe)
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A {
+    int f(int a);
+}
+{
+}

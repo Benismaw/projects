@@ -1,0 +1,14 @@
+// Description: Test de l'initialisation par défaut et explicite des champs.
+// Resultats: 0 1.50000e+00 false
+class A {
+    int x; // Doit être 0 par défaut 
+    float y = 1.5;
+    boolean z; // Doit être false par défaut
+}
+{
+    A a = new A();
+    print(a.x, " ", a.y, " ");
+    if (!a.z) {print("false");}
+}
+
+

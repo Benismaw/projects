@@ -1,0 +1,14 @@
+// Description:
+//    Test de contexte : Return dans une méthode void
+//
+// Resultats:
+//    Erreur contextuelle : Impossible de retourner une valeur dans une méthode de type void
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A {
+    void m() {
+        return 1;
+    }
+}

@@ -1,0 +1,11 @@
+
+// Description:
+//Teste les comparisons produisant des booléens 
+// Historique:09/01/2026
+
+{  
+    boolean b1, b2, b3;
+    b1= 5 > 2;
+    b2= 4 <= 4;
+    b3= 1 != 2;
+}

@@ -1,0 +1,10 @@
+// Description:
+//    Test unaire sur float
+//
+// Resultats:
+//    Affiche -x
+{
+    float x;
+    x = readFloat();
+    println(-x);
+}

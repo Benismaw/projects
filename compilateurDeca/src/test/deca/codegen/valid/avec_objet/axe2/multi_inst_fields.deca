@@ -1,0 +1,14 @@
+// Description:
+//    Vérifie que deux instances ont des emplacements mémoire distincts dans le tas.
+// Resultats:
+//    10 20
+// Historique:
+//    cree le 14/01/2026
+class Pos { int x; }
+{
+    Pos p1 = new Pos();
+    Pos p2 = new Pos();
+    p1.x = 10;
+    p2.x = 20;
+    println(p1.x, " ", p2.x);
+}

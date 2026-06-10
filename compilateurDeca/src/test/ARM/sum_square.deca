@@ -1,0 +1,14 @@
+// Description:
+//    Somme des carres 1..100
+//
+// Resultats:
+//    338350
+{
+    int i = 1;
+    int s = 0;
+    while (i <= 100) {
+        s = s + i*i;
+        i = i + 1;
+    }
+    println(s);
+}

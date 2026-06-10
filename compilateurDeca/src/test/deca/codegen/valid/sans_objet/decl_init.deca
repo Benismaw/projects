@@ -1,0 +1,18 @@
+// Description:
+//    tests declaration + initialisation
+//
+// Resultats:
+//    5
+//   7.50000e+00
+// 
+// Historique:
+//    cree le 09/01/2026
+
+{
+    int a =1;
+    int b=4;
+    float c=3.5;
+
+    println(a+b);
+    println(c+4.0);
+}

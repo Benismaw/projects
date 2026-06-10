@@ -1,0 +1,29 @@
+// Description:
+//    deux classes B et C héritent de A. Leurs virtualtables doivent être distinctes.
+//
+// Resultats:
+//    Je suis B
+//    Je suis C
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void identifier() { println("Je suis A"); }
+}
+
+class B extends A {
+    void identifier() { println("Je suis B"); }
+}
+
+class C extends A {
+    void identifier() { println("Je suis C"); }
+}
+
+{
+    A obj1 = new B();
+    A obj2 = new C();
+    obj1.identifier();
+    obj2.identifier();
+}
+

@@ -1,0 +1,16 @@
+// Test de la Passe 2 : Redéfinition avec covariance du type de retour
+class A {
+    A get() {
+        return null;
+    }
+}
+
+class B extends A {
+    // Valide : B est un sous-type de A
+    B get() {
+        return null;
+    }
+}
+{
+}
+

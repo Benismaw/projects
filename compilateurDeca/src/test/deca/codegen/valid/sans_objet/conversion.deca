@@ -1,0 +1,15 @@
+// Description:
+//    Tests conversion indirect 
+// Resultats:
+//    ok
+// Historique:
+//    cree le 11/01/2026
+{
+    float f;
+    f = 1; 
+    if (f == 1.0) {
+        println("ok");
+    } else {
+        println("Erreur");
+    }
+}

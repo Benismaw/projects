@@ -1,0 +1,19 @@
+// Description:
+//    Vérification de l'adressage des paramètres (LB offsets).
+// Resultats:
+//    10
+//    20
+//    30
+// Historique: cree le 14/01/2026
+class Test {
+    int x = 10;
+    void verify(int a, int b) {
+        println(this.x); 
+        println(a);      
+        println(b);      
+    }
+}
+{
+    Test t = new Test();
+    t.verify(20, 30);
+}

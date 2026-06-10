@@ -1,0 +1,20 @@
+// Description:
+//    Erreur a l'execution objets imbriques
+//
+// Resultats:
+//    Erreur : tas plein
+//
+// Historique:
+//    cree le 10/01/2026
+class B { int k1; int k2; int k3; int k4; int k5; }
+class A { B b1; B b2; B b3; }
+{
+    A a;
+
+    while (true) {
+        a = new A();
+        a.b1 = new B();
+        a.b2 = new B();
+        a.b3 = new B();
+    }
+}

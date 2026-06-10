@@ -1,0 +1,16 @@
+// Description:
+//    Test de contexte : condition non booléenne.
+//
+// Resultats:
+//    Erreur contextuelle : Type attendu boolean, trouvé A (ou null).
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+{
+    A a = new A();
+    if (a) {
+        println("non");
+    }
+}

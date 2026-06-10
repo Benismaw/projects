@@ -1,0 +1,10 @@
+
+//Description
+//
+//Teste l’usage d’un mot-clé comme identificateur
+// Historique:
+//    cree le 08/01/2026
+
+{
+    int if;
+}

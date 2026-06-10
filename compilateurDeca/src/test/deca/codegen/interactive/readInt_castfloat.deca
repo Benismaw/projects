@@ -1,0 +1,12 @@
+// Description:
+//    Test int->float implicite dans expression
+//
+// Resultats:
+//    Affiche y = x + 0.25 
+{
+    int x;
+    float y;
+    x = readInt();
+    y = x + 0.25;
+    println(y);
+}

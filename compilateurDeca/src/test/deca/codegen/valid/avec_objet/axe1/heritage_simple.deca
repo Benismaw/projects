@@ -1,0 +1,22 @@
+// Description:
+//    Test d'héritage simple : appel d'une méthode de la super-classe
+//
+// Resultats:
+//    10
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void print10() {
+        println(10);
+    }
+}
+
+class B extends A {
+}
+
+{
+    B b = new B();
+    b.print10(); // Doit utiliser la vtable de B pour trouver A.print10
+}

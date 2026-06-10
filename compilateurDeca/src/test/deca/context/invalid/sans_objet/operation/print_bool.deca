@@ -1,0 +1,15 @@
+// Description:
+//    Sans-Objet
+//    Affichage
+//    Affichage d'un booléen :
+//
+// Resultats:
+//    Ligne 14: 
+//    impossible d'afficher un booléen
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    print(true);
+}

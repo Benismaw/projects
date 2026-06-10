@@ -1,0 +1,13 @@
+// Description:
+//    Test de contexte : instanceof avec membre gauche non objet (int)
+//
+// Resultats:
+//    Erreur contextuelle : Le membre gauche de instanceof doit être un objet ou null
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A { }
+{
+    1 instanceof A;
+}

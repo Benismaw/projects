@@ -1,0 +1,14 @@
+// Description:
+//    Test de contexte : Affichage d'un objet
+//
+// Resultats:
+//    Erreur contextuelle : Type A non supporté par print.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+{
+    A a = new A();
+    println(a);
+}

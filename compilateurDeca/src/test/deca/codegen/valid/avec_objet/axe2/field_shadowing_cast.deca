@@ -1,0 +1,12 @@
+// Description:
+// Accès à un champ masqué (shadowing) en changeant le type statique via un cast
+// Resultats:
+//  1 2
+// Historique:
+//    cree le 14/01/2026
+class Mere { int x = 1; }
+class Fille extends Mere { int x = 2; }
+{
+    Fille f = new Fille();
+    println(((Mere)(f)).x, " ", f.x); // Doit afficher 1 (offset Mere)puis 2 (offset Fille)
+}

@@ -1,0 +1,10 @@
+// Description: Initialisation d'un champ via un appel de méthode.
+// Resultats: 42
+class A {
+    int getVal() { return 42; }
+    int x = getVal(); 
+}
+{
+    A a = new A();
+    println(a.x);
+}

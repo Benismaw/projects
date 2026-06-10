@@ -1,0 +1,12 @@
+// Description:
+//    Mélange de priorités forçant une gestion rigoureuse des registres.
+// Resultats:
+//    2.50000e+00
+{
+    float a = 1.0;
+    float b = 2.0;
+    // (1.0 + 3.0 * 2.0) / (b + 1.0) = 7.0 / 3.0 ≈ 2.33
+    // On teste ici un cas simple pour la précision : (1.0 + (6.0)) / 2.0
+    float res = (a + 4.0) / b;
+    println(res);
+}

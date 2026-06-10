@@ -1,0 +1,6 @@
+class Main {
+  void main() {
+    float h1 = 0x1.8p+1;
+    float h2 = 0X0.ABp-2f;
+  }
+}

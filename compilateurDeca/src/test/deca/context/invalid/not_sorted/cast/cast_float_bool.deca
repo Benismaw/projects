@@ -1,0 +1,17 @@
+
+// Description:
+//    Sans-Objet
+//    Affectation et expression de base
+//    condition cast_compatible 
+//
+// Resultats:
+//    Ligne 17: 
+//      Conversion de type (cast) invalide
+// 
+// Historique:
+//    cree le 06/01/2026
+
+
+{
+    boolean y = (boolean)(5.5);
+}

@@ -1,0 +1,14 @@
+// Description:
+//    Vérifie l'adressage de 8 paramètres de types mixtes.
+// Resultats:
+//    1 2.00000e+00 3 4.00000e+00 5 6.00000e+00 7 8.00000e+00
+// Historique: cree le 14/01/2026
+class Big {
+    void show(int a, float b, int c, float d, int e, float f, int g, float h) {
+        println(a, " ", b, " ", c, " ", d, " ", e, " ", f, " ", g, " ", h);
+    }
+}
+{
+    Big b = new Big();
+    b.show(1, 2.0, 3, 4.0, 5, 6.0, 7, 8.0);
+}

@@ -1,0 +1,18 @@
+// Description:
+//    Sans-Objet
+//    Affectation
+//  
+//
+// Resultats:
+//    compilation bonne
+//        
+// 
+// Historique:
+//    cree le 06/01/2026
+
+{
+    int a = 10;
+    boolean b = ( a >= 5); //doit être vrai
+    boolean c = ( a >= 15);  //doit être faux
+
+}

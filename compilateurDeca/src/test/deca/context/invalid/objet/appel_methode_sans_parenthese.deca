@@ -1,0 +1,16 @@
+// Description:
+//    Erreur de syntaxe : appel de méthode sans parenthèses vides.
+//
+// Resultats:
+//    Erreur syntaxique ligne 14
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    void m() {}
+}
+{
+    A a = new A();
+    a.m;
+}

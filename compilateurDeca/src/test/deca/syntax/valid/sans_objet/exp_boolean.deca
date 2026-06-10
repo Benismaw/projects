@@ -1,0 +1,10 @@
+
+
+// Description:
+//
+// Teste expression booléenne
+// Historique:09/01/2026
+{
+    boolean b;
+    b = true && false || !false;
+}

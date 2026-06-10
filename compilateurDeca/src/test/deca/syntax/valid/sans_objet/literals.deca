@@ -1,0 +1,14 @@
+
+// Description:
+//
+// Teste les littéraux (int/float/bool) + affectation
+// Historique:09/01/2026
+{
+    int x;
+    float y;
+    boolean b;
+    x = 22;
+    y = 9.8;
+    b = true;
+
+}

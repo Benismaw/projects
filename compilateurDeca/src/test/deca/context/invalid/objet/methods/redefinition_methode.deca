@@ -1,0 +1,17 @@
+// Description:
+//    Test de contexte : redéfinition de méthode avec mauvais type de paramètre.
+//
+// Resultats:
+//    Erreur contextuelle : La signature de B.m ne correspond pas à celle de A.m
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    void m(int i) {}
+}
+class B extends A {
+    void m(float i) {}
+}
+{
+}

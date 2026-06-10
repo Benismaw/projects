@@ -1,0 +1,17 @@
+// Description:
+//    Vérifie que TSTO réserve assez de place pour les paramètres de l'appel sortant.
+// Resultats:
+//    OK
+// Historique: cree le 14/01/2026
+
+class Stress {
+    void call(int a, int b, int c, int d, int e, int f) { println("OK"); }
+    void start() {
+        // Cette méthode doit faire un TSTO suffisant pour call(...)
+        this.call(1, 2, 3, 4, 5, 6);
+    }
+}
+{
+    Stress s = new Stress();
+    s.start();
+}

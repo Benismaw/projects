@@ -1,0 +1,19 @@
+// Description:
+//    Utilise une méthode dans l'init pour accéder à un champ pas encore initialisé explicitement.
+// Resultats:
+//    1
+// Historique:
+//    cree le 14/01/2026
+
+class Order {
+    int getInitialY() {
+        return this.y; // y n'est pas encore init, donc vaut 0
+    }
+    int x = getInitialY() + 1;
+    int y = 10;
+}
+
+{
+    Order o = new Order();
+    println(o.x);
+}

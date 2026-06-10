@@ -1,0 +1,20 @@
+// Description:
+//    Classe avec un champ public, un champ protégé, et une méthode.
+//    Vérifie la syntaxe de déclaration basique.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    int x;
+    protected float y;
+
+    void m() {
+    }
+}
+
+{
+}

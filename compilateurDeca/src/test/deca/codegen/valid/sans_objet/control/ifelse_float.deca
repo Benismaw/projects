@@ -1,0 +1,16 @@
+// Description:
+//    Fonction par morceaux (float) + if/else
+//
+// Resultats:
+//    6.25000e+00
+{
+    float x = 2.5;
+    float y;
+
+    if (x < 0.0) {
+        y = -x;
+    } else {
+        y = x*x;
+    }
+    println(y);
+}

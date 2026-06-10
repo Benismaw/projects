@@ -1,0 +1,16 @@
+// Description:
+//    Cast invalide entre deux classes sans lien de parenté direct (frères).
+// Resultats:
+//    Erreur : conversion de type impossible
+// Historique:
+//    cree le 14/01/2026
+
+class Mere {}
+class A extends Mere {}
+class B extends Mere {}
+
+{
+    Mere m = new A();
+    B b = (B)(m); // m est un A, le cast vers B doit échouer
+}
+

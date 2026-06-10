@@ -1,0 +1,13 @@
+// Description:
+//    Point manquant lors de l'appel de la methode
+//
+// Resultats:
+//    Erreur syntaxique ligne 12
+//
+// Historique:
+//    cree le 13/01/2026
+
+{
+    A a;
+    a m();
+}

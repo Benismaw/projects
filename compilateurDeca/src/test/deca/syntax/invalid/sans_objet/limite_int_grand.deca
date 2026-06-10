@@ -1,0 +1,12 @@
+// Description:
+//    Vérifie le rejet d'un entier dépassant la limite des 32 bits signés.
+//
+// Resultats:
+//    Ligne 11: Erreur : littéral entier trop grand (2^31 - 1 max).
+// 
+// Historique:
+//    cree le 12/01/2026
+
+{
+    int x = 2147483648; // Valeur max + 1
+}

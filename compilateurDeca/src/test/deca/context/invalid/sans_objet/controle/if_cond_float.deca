@@ -1,0 +1,12 @@
+// Description:
+//    Vérifie que le compilateur rejette un 'if' avec une condition float.
+//
+// Resultats:
+//    Ligne 11: La condition doit être de type boolean 
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    if (1.1) { } 
+}

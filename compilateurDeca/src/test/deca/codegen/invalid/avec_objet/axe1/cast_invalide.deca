@@ -1,0 +1,17 @@
+// Description:
+//    Cast invalide vers une classe soeur.
+//
+// Resultats:
+//    Erreur : conversion de type impossible
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {}
+class B extends A {}
+class C extends A {}
+
+{
+    A a = new B();
+    C c = (C)(a); // B n'est pas un C
+}

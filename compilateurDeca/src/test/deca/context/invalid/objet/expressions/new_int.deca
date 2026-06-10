@@ -1,0 +1,12 @@
+// Description:
+//    Test de contexte : new sur un type primitif (int)
+//
+// Resultats:
+//    Erreur contextuelle : Le type instancié par new doit être une classe
+//
+// Historique:
+//    cree le 15/01/2026
+
+{
+    new int();
+}

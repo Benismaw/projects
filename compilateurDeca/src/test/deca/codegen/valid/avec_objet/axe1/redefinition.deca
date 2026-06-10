@@ -1,0 +1,26 @@
+// Description:
+//    Test de redéfinition : la méthode de la sous-classe doit masquer celle de la mère
+//
+// Resultats:
+//    Je suis B
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void identifier() {
+        println("Je suis A");
+    }
+}
+
+class B extends A {
+    void identifier() {
+        println("Je suis B");
+    }
+}
+
+{
+    B b = new B();
+    b.identifier();
+}
+

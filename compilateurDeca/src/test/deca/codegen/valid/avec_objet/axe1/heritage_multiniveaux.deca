@@ -1,0 +1,27 @@
+// Description:
+//    Test d'héritage profond (3 niveaux)
+//
+// Resultats:
+//    Methode de A
+//    Methode de C
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void actionA() { println("Methode de A"); }
+    void actionC() { println("ActionC version A"); }
+}
+
+class B extends A {
+}
+
+class C extends B {
+    void actionC() { println("Methode de C"); }
+}
+
+{
+    C c = new C();
+    c.actionA(); // Hérité de A
+    c.actionC(); // Redéfini dans C
+}

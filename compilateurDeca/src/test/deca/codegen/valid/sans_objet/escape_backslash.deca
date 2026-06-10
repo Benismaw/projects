@@ -1,0 +1,7 @@
+// Description:
+//    Test de l'échappement du caractère antislash(\\).
+// Resultats:
+//    Chemin: C:\Deca\Test
+{
+    println("Chemin: C:\\Deca\\Test");
+}

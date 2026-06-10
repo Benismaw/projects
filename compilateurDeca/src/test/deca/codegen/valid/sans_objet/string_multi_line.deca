@@ -1,0 +1,9 @@
+// Description:
+//    Test des chaînes de caractères sur plusieurs lignes.
+// Resultats:
+//    Ligne 1
+//    Ligne 2
+{
+    println("Ligne 1
+Ligne 2");
+}

@@ -1,0 +1,17 @@
+// Description:
+//    Test de contexte : affectation incompatible.
+//
+// Resultats:
+//    Erreur contextuelle: Type A non compatible avec B.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+class B extends A {}
+
+{
+    A a = new A();
+    B b;
+    b = a;
+}

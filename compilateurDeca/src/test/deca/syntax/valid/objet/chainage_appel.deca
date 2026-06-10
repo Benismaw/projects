@@ -1,0 +1,18 @@
+// Description:
+//    Chainage de selections + appels
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 15/01/2026
+class B { int m() { return 8; } }
+class A {
+    B b;
+    int n() { return this.b.m(); }
+}
+{
+    A a;
+    a = new A();
+    println(a.n());
+}

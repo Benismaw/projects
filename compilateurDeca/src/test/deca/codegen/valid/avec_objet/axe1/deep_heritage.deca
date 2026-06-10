@@ -1,0 +1,17 @@
+// Description:
+//    Héritage profond (4 niveaux) avec retour de string.
+//    Vérifie la remontée de la VTable jusqu'à la racine.
+// Resultats:
+//    Niveau 4
+// Historique:
+//    cree le 14/01/2026
+
+class L1 { void who() { println ("Niveau 1"); } }
+class L2 extends L1 {}
+class L3 extends L2 {}
+class L4 extends L3 { void who() { println ("Niveau 4"); } }
+
+{
+    L1 obj = new L4();
+    obj.who();
+}

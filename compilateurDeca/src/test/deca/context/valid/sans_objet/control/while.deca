@@ -1,0 +1,19 @@
+// Description:
+//    Sans-Objet
+//    structures de base
+//  
+//
+// Resultats:
+//    compilation bonne
+//        
+// 
+// Historique:
+//    cree le 06/01/2026
+
+{
+    int x = 1;
+
+    while(x < 10){
+        x = x+1;
+    } 
+}

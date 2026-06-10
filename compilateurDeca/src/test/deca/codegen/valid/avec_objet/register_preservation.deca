@@ -1,0 +1,18 @@
+// Description:
+//    Vérifie que la méthode ne corrompt pas les registres du programme principal.
+// Resultats:
+//    Resultat: 47
+//    Main preserve: 1
+// Historique: cree le 14/01/2026
+class Calc {
+    int complex(int a, int b) {
+        // Utilise beaucoup de registres pour le calcul
+        return (a * b) + (a / b) - (a - b);
+    }
+}
+{
+    int i = 1; // Stocké dans un registre 
+    Calc c = new Calc();
+    println("Resultat: ", c.complex(10, 5));
+    println("Main preserve: ", i); // Doit toujours être 1
+}

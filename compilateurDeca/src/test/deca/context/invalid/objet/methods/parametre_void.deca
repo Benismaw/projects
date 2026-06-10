@@ -1,0 +1,19 @@
+
+// Description:
+//    Sans-Objet
+//    Affectation et expressions de base
+//    condition type != void :
+//
+// Resultats:
+//    Ligne 15: 
+//     Le type d'une variable ne peut pas être void
+//
+// Historique:
+//    cree le 06/01/2026
+
+
+class A {
+    int methode(void a){
+        return 0;
+    }
+}

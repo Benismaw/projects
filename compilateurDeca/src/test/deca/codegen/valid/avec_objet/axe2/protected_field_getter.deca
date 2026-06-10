@@ -1,0 +1,14 @@
+// Description:
+//    Accès valide à un champ protégé via une méthode de la sous-classe.
+// Resultats:
+//    7
+// Historique:
+//    cree le 14/01/2026
+class A { protected int x = 7; }
+class B extends A {
+    int getX() { return this.x; }
+}
+{
+    B b = new B();
+    println(b.getX());
+}

@@ -1,0 +1,93 @@
+class Personnage {
+    int x;
+    int y;
+    int hp;
+    int atk;
+
+    void seDeplacer(int dx, int dy) {
+        x = x + dx;
+        y = y + dy;
+    }
+
+    boolean estMort() {
+        return hp <= 0;
+    }
+}
+
+class Hero extends Personnage {
+    Equipement equipement;
+
+    int baseAtk;
+    int mana;
+    boolean hasFireball;
+
+    void initHero(int startX, int startY) {
+        this.x = startX;
+        this.y = startY;
+        this.hp = 50;
+        this.atk = 5;
+        this.baseAtk = 5;
+        this.mana = 20;
+        this.hasFireball = false;
+    }
+
+    void equiper(Equipement e) {
+        this.equipement = e;
+        this.atk = this.baseAtk + e.bonusAtk;
+        this.hp = this.hp + e.bonusHp; // On ajoute les HP bonus comme un soin/buff
+        println("Bravo ! Vous avez equipe un nouvel objet !");
+        println("Nouvelle ATK: ", this.atk);
+    }
+
+    void attaquer(Monstre m) {
+        println("Vous attaquez le monstre !");
+        m.recevoirDegats(this.atk);
+        this.mana = this.mana + 2; // Regen mana on hit
+        println("Mana: ", this.mana);
+    }
+
+    void seSoigner() {
+        if (this.mana >= 5) {
+            this.hp = this.hp + 15;
+            this.mana = this.mana - 5;
+            println("Vous vous soignez de 15 HP. HP: ", this.hp, " Mana: ", this.mana);
+        } else {
+            println("Pas assez de mana pour se soigner !");
+        }
+    }
+
+    void bouleDeFeu(Monstre m) {
+        if (this.mana >= 10) {
+            println("BOULE DE FEU !");
+            m.recevoirDegats(20);
+            this.mana = this.mana - 10;
+            println("Mana restant: ", this.mana);
+        } else {
+            println("Pas assez de mana !");
+        }
+    }
+
+    void recevoirDegats(int degats) {
+        this.hp = this.hp - degats;
+        println("Vous avez recu ", degats, " points de degats. HP restants: ", this.hp);
+    }
+}
+
+class Monstre extends Personnage {
+    void initMonstre(int startX, int startY, int hp, int atk) {
+        this.x = startX;
+        this.y = startY;
+        this.hp = hp;
+        this.atk = atk;
+    }
+
+    void attaquer(Hero h) {
+        println("Le monstre vous attaque !");
+        h.recevoirDegats(this.atk);
+    }
+
+    void recevoirDegats(int degats) {
+        this.hp = this.hp - degats;
+        println("Le monstre a recu ", degats, " points de degats. HP restants: ", this.hp);
+    }
+}

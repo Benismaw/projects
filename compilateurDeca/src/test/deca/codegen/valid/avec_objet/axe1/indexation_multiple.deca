@@ -1,0 +1,26 @@
+// Description:
+//    Test de robustesse de l'indexation vtable avec de nombreuses méthodes.
+//
+// Resultats:
+//    m10
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void m1() { println("m1"); }
+    void m2() { println("m2"); }
+    void m3() { println("m3"); }
+    void m4() { println("m4"); }
+    void m5() { println("m5"); }
+    void m6() { println("m6"); }
+    void m7() { println("m7"); }
+    void m8() { println("m8"); }
+    void m9() { println("m9"); }
+    void m10() { println("m10"); }
+}
+
+{
+    A a = new A();
+    a.m10(); // Vérifie que l'index de m10 est correct dans la vtable
+}

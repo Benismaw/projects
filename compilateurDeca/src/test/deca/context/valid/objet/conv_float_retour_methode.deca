@@ -1,0 +1,19 @@
+// Description:
+//    Test de contexte : Conversion implicite int -> float lors d'un appel de méthode.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class Math {
+    void setVal(float f) {}
+}
+
+{
+    Math m = new Math();
+    int x = 5;
+    m.setVal(x);
+    m.setVal(10);
+}

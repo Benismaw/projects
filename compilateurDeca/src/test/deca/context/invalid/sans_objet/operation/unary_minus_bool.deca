@@ -1,0 +1,12 @@
+// Description:
+//    Vérifie que le moins unaire (-) est interdit sur les booléens.
+//
+// Resultats:
+//    Ligne 11: l'opération moins unaire n'est pas définie pour boolean 
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    boolean b = -true; // Erreur : minus attend int ou float
+}

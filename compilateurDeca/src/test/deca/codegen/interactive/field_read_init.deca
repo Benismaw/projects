@@ -1,0 +1,15 @@
+// Description:
+//    Initialisation d'un champ via readInt().
+// Resultats:
+//    (Entrée utilisateur: 10) 10
+// Historique:
+//    cree le 14/01/2026
+
+class InputField {
+    int x = readInt();
+}
+
+{
+    InputField f = new InputField();
+    println(f.x);
+}

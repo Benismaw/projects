@@ -1,0 +1,14 @@
+// Description:
+// Sélection d'un champ directement sur le retour d'une méthode renvoyant un objet
+// Resultats:
+//  42
+// Historique:
+//    cree le 14/01/2026
+class Data { int val = 42; }
+class Tool {
+    Data getData() { return new Data(); }
+}
+{
+    Tool t = new Tool();
+    println(t.getData().val);
+}

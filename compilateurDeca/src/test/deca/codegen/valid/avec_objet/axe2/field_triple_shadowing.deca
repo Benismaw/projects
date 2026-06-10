@@ -1,0 +1,11 @@
+// Description: Masquage (shadowing) sur trois niveaux de hiérarchie.
+// Resultats: 1 2 3
+class A { int x = 1; }
+class B extends A { int x = 2; }
+class C extends B { int x = 3; }
+{
+    C c = new C();
+    B b = c;
+    A a = c;
+    println(a.x, " ", b.x, " ", c.x); // Doit afficher 1 2 3
+}

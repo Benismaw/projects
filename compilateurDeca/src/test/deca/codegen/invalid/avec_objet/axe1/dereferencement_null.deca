@@ -1,0 +1,19 @@
+// Description:
+//    Appel de méthode sur une référence null.
+//
+// Resultats:
+//    Erreur : dereferencement de null
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void test() {
+        println("ne doit pas s'afficher");
+    }
+}
+
+{
+    A a = null;
+    a.test(); // Doit provoquer l'erreur à l'exécution
+}

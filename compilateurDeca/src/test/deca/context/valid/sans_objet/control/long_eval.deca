@@ -1,0 +1,16 @@
+// Description:
+//    Vérifie la validité contextuelle des expressions booléennes paresseuses complexes.
+//
+// Resultats:
+//    Vérification réussie.
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    boolean a = true;
+    boolean b = false;
+    if ((a && b) || (a || !b)) { 
+        println("ok");
+    }
+}

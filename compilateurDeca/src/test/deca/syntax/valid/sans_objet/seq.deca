@@ -1,0 +1,11 @@
+
+// Description:
+//
+//RTeste l'éxecution séquentielle
+// Historique:09/01/2026
+{
+    int x;
+    x =10;
+    print(x);
+    x= x+1;
+}

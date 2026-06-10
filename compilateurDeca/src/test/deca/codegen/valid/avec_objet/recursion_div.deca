@@ -1,0 +1,19 @@
+// Description:
+//    Calcul récursif du log2 (division entière par 2)
+// Resultats:
+//    log2(16) = 4
+// Historique:
+//    cree le 18/01/2026
+class DivRecursion {
+    int log2(int n) {
+        if (n <= 1) {
+            return 0;
+        }
+        return 1 + log2(n / 2);
+    }
+}
+{
+    DivRecursion d = new DivRecursion();
+    print("log2(16) = ", d.log2(16));
+}
+

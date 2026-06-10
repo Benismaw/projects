@@ -1,0 +1,28 @@
+// Description:
+//    Deux classes B et C héritent de A et redéfinissent différemment.
+//
+// Resultats:
+//    Je suis B
+//    Je suis C
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void quiSuisJe() { println("Je suis A"); }
+}
+
+class B extends A {
+    void quiSuisJe() { println("Je suis B"); }
+}
+
+class C extends A {
+    void quiSuisJe() { println("Je suis C"); }
+}
+
+{
+    A b = new B();
+    A c = new C();
+    b.quiSuisJe();
+    c.quiSuisJe();
+}

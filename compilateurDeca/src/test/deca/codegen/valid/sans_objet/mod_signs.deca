@@ -1,0 +1,9 @@
+// Description:
+//    Vérification du comportement de l'instruction REM avec des opérandes négatifs.
+// Resultats:
+//    -1
+//    1
+{
+    println(-5 % 2);  // Résultat attendu sur IMA : -1 
+    println(5 % -2);  // Résultat attendu sur IMA : 1 
+}

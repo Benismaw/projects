@@ -1,0 +1,7 @@
+// Description:
+//    Test de l'échappement des guillemets doubles(\").
+// Resultats:
+//    Ceci est un "guillemet".
+{
+    println("Ceci est un \"guillemet\".");
+}

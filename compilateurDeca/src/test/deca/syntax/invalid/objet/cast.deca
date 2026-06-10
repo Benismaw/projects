@@ -1,0 +1,13 @@
+// Description:
+//   Cast mal formé 
+// Resultats:
+//    Echec (erreur de syntaxe)
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A { }
+{
+    Object o;
+    o = (Object null);
+}

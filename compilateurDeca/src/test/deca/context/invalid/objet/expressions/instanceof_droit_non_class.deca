@@ -1,0 +1,15 @@
+// Description:
+//    Test de contexte : instanceof avec membre droit non classe (variable)
+//
+// Resultats:
+//    Erreur contextuelle : Le membre droit de instanceof doit être une classe
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A { }
+{
+    A a = new A();
+    int x;
+    a instanceof x;
+}

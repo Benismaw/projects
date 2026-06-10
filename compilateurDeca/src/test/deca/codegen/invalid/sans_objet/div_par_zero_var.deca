@@ -1,0 +1,13 @@
+// Description
+//    Erreur à l'execution: division par 0 
+//
+// Resultats:
+//    Erreur d'execution
+//
+// Historique:
+//    cree le 10/01/2026
+
+{
+    int z = 0;
+    println(10 / z);
+}

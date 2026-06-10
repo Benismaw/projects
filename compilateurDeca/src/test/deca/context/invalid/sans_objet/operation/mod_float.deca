@@ -1,0 +1,15 @@
+// Description:
+//    Sans-Objet
+//    Modulo
+//    Modulo sur flottant :
+//
+// Resultats:
+//    Ligne 14: 
+//    l'opération modulo n'est définie qu'entre deux entiers 
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    float f = 15.0 % 3.0;
+}

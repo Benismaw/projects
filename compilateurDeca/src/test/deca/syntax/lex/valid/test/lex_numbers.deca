@@ -1,0 +1,9 @@
+class Main {
+  void main() {
+    int a = 0;
+    int b = 12345;
+    float x = 3.14;
+    float y = 2.0e10;
+    float z = 1.5E-2f;
+  }
+}

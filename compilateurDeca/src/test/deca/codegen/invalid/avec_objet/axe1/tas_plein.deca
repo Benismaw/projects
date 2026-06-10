@@ -1,0 +1,19 @@
+// Description:
+//    Test de débordement du tas (tas plein).(ima -t 100 tas_plein.ass)
+// 
+// Resultats:
+//    Erreur : allocation impossible, tas plein
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    int x;
+}
+
+{
+    // Sur ima, on peut limiter le tas avec l'option -t pour forcer l'erreur
+    while (true) {
+        new A();
+    }
+}

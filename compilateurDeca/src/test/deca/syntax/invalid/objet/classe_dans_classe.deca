@@ -1,0 +1,15 @@
+// Description:
+//    Erreur de syntaxe : classe imbriquée (nested class).
+//
+// Resultats:
+//    Erreur syntaxique ligne 12
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    class B {
+    }
+}
+{
+}

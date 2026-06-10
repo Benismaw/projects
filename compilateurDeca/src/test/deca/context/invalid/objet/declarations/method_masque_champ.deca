@@ -1,0 +1,15 @@
+// Description:
+//    Test de contexte : Une méthode tente de masquer un champ hérité
+//
+// Resultats:
+//    Erreur contextuelle : un nom de méthode redéclare un nom de champ
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A {
+    int x;
+}
+class B extends A {
+    void x() { }
+}

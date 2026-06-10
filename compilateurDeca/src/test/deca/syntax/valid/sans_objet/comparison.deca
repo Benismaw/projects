@@ -1,0 +1,10 @@
+
+// Description:
+//
+// Teste une comparison simple
+// Historique:09/01/2026
+{
+    boolean b;
+    b = 4 > 2; 
+}
+

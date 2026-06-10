@@ -1,0 +1,18 @@
+// Description:
+//    Sans-Objet
+//    Affectation
+//    condition (compatibilité des types) 
+//
+// Resultats:
+//    Ligne 17: 
+//        Affectation incompatible : impossible d’affecter (type_rvalue) à (type_lvalue)
+// 
+// Historique:
+//    cree le 06/01/2026
+
+{
+    int a = 1;
+    bool b = false;
+
+    a = b;
+}   

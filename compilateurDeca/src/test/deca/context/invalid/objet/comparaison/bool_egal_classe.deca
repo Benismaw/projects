@@ -1,0 +1,15 @@
+// Description:
+//    Test de contexte : comparaison == type incompatible.
+//
+// Resultats:
+//    Erreur contextuelle : Comparaison invalide entre A et bool.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+{
+    A a = new A();
+    if (a == true) {
+    }
+}

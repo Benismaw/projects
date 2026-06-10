@@ -1,0 +1,10 @@
+// Description:
+//    Test unaire sur int
+//
+// Resultats:
+//    Affiche -x
+{
+    int x;
+    x = readInt();
+    println(-x);
+}

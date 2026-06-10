@@ -1,0 +1,17 @@
+// Description:
+//    Stress test : classe avec un grand nombre de champs (10).
+//    Vérifie que le compilateur calcule correctement les offsets importants.
+// Resultats:
+//    10
+// Historique:
+//    cree le 14/01/2026
+
+class Big {
+    int f1, f2, f3, f4, f5, f6, f7, f8, f9;
+    int f10 = 10;
+}
+
+{
+    Big b = new Big();
+    println(b.f10);
+}

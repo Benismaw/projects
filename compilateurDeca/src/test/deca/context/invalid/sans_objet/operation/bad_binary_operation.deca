@@ -1,0 +1,17 @@
+
+// Description:
+//    Sans-Objet
+//    Operation Binaire
+//    type_binary_op indéfini (types incompatibles) :
+//
+// Resultats:
+//    Ligne 16: 
+//     Types incompatibles pour l'opération binaire
+// 
+// Historique:
+//    cree le 06/01/2026
+
+
+{
+    int a = 5 + true;
+}

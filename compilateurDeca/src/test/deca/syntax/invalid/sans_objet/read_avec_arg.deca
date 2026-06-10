@@ -1,0 +1,11 @@
+
+
+//Description
+//
+//Teste readInt appelé avec un argument
+// Historique:
+//    cree le 08/01/2026
+{
+    int x;
+    x= readInt(3);
+}

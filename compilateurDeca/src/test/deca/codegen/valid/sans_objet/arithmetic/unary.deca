@@ -1,0 +1,12 @@
+// Description:
+//    tests multi declaration 
+//
+// Resultats:
+//   8
+// 
+// Historique:09/01/2026
+
+{
+    int x= -(-8);
+    println(x);
+}

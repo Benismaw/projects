@@ -1,0 +1,9 @@
+// Description:
+//    Vérifie que les expressions dans print sont évaluées séquentiellement.
+// Resultats:
+//    1011
+{
+    int x = 10;
+    // print évalue (x) puis (x=11)
+    print(x, x = 11); 
+}

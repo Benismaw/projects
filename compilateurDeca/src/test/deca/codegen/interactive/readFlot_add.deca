@@ -1,0 +1,10 @@
+// Description:
+//    readFloat puis calcule
+//
+// Resultats:
+//    si entrée = 1.5 -> 2.5
+{
+    float x;
+    x = readFloat();
+    println(x + 1.0);
+}

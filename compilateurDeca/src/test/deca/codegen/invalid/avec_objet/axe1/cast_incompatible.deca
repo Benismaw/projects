@@ -1,0 +1,17 @@
+// Description:
+//    Transtypage (cast) invalide entre deux classes ayant la même mère.
+// Resultats:
+//    Erreur : conversion de type impossible
+// Historique:
+//    cree le 14/01/2026
+
+class Mere {}
+class Fille1 extends Mere {}
+class Fille2 extends Mere {}
+
+{
+    Mere m = new Fille1();
+    Fille2 f2;
+    // m est dynamiquement une Fille1, on ne peut pas la transformer en Fille2
+    f2 = (Fille2)(m); 
+}

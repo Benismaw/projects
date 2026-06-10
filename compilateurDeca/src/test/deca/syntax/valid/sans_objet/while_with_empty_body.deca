@@ -1,0 +1,11 @@
+
+
+// Description:
+//
+// Teste while avec corps vide
+
+// Historique:09/01/2026
+{
+    while (false) {
+    }
+}

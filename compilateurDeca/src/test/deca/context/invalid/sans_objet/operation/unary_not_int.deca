@@ -1,0 +1,12 @@
+// Description:
+//    Vérifie que la négation (!) est interdite sur les types numériques.
+//
+// Resultats:
+//    Ligne 12: l'opération not n'est définie que pour le type boolean
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    boolean b = !1; 
+}

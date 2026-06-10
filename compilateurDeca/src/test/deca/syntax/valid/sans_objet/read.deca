@@ -1,0 +1,11 @@
+
+// Description:
+//
+//Teste readInt, readFloat et l'affectaton
+// Historique:09/01/2026
+{
+    int x;
+    float z; 
+    x= readInt();
+    z= readFloat();
+}

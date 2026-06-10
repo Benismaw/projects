@@ -1,0 +1,27 @@
+// Description:
+//    Test de liaison dynamique avec covariance du type de retour (règle 2.7).
+//
+// Resultats:
+//    B genere
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    A factory() {
+        println("A genere");
+        return this;
+    }
+}
+
+class B extends A {
+    B factory() {
+        println("B genere");
+        return this;
+    }
+}
+
+{
+    A obj = new B();
+    A resultat = obj.factory(); // Appelle B.factory via l'index vtable de A.factory
+}

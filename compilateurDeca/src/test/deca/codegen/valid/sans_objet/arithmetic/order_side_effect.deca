@@ -1,0 +1,11 @@
+// Description:
+//    Vérifie l'ordre d'évaluation strict de gauche à droite.
+// Resultats:
+//    11
+{
+    int x = 1;
+    // x (1) est évalué, puis l'affectation (x=10) est évaluée.
+    // Le résultat doit être 1 + 10 = 11, et non 10 + 10 = 20.
+    int res = x + (x = 10);
+    println(res);
+}

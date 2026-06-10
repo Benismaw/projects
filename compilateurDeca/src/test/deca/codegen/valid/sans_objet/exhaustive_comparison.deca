@@ -1,0 +1,21 @@
+// Description:
+//    Stockage exhaustif des résultats de comparaisons (Instructions Scc).
+// Resultats:
+//    true false false true true false
+{
+    int a = 10;
+    int b = 5;
+    boolean eq = (a == b + 5); // SEQ
+    boolean ne = (a != 10);    // SNE
+    boolean lt = (a < b);      // SLT
+    boolean le = (a <= 10);    // SLE
+    boolean gt = (a > b);      // SGT
+    boolean ge = (b >= a);     // SGE
+    if (eq) {print("true ");}
+    if (!ne) {print("false ");}
+    if (!lt) {print("false ");}
+    if (le) {print("true ");}
+    if (gt) {print ("true ");}
+    if (!ge) {print("false");}
+}
+

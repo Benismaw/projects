@@ -1,0 +1,17 @@
+// Description:
+//   Instanceof avec precedence et parenthesis
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A { }
+class B extends A { }
+{
+    Object o;
+    boolean b;
+    o = new B();
+    b = (o instanceof A) && !(o instanceof B || o instanceof Object);
+}

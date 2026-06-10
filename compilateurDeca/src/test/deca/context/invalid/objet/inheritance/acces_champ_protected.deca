@@ -1,0 +1,21 @@
+// Description:
+//    Test de contexte : violation de visibilité protected.
+//
+// Resultats:
+//    Erreur contextuelle : le champ 'x' est protégé.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    protected int x;
+}
+class B extends A {
+    void m() {
+        x = 1;
+    }
+}
+{
+    A a = new A();
+    a.x = 2;
+}

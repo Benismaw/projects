@@ -1,0 +1,17 @@
+// Description:
+//    Erreur a l'execution : appel de methode
+//
+// Resultats:
+//    Erreur : dereferencement de null
+//
+// Historique:
+//    cree le 10/01/2026
+class A {
+    void hello() {
+        println("ok");
+    }
+}
+{
+    A a = null;
+    a.hello();
+}

@@ -1,0 +1,15 @@
+// Description:
+//    Vérifie l'utilisation des instructions Scc (SGT, SLT...) pour stocker 
+//    le résultat d'une comparaison dans une variable booléenne.
+// Resultats:
+//    true
+//    false
+{
+    int x = 10;
+    int y = 5;
+    boolean b1 = (x > y);
+    boolean b2 = (x == y);
+    if (b1) {println("true");}
+
+    if (!b2) {println("false");}
+}

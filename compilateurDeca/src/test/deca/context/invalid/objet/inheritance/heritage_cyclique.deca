@@ -1,0 +1,14 @@
+// Description:
+//    Test de contexte : héritage cyclique direct.
+//    Règle : Le graphe d'héritage doit être acyclique.
+//
+// Resultats:
+//    Erreur contextuelle : Cycle d'héritage détecté pour la classe A.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A extends A {
+}
+{
+}

@@ -1,0 +1,13 @@
+// Description:
+//    Test de contexte : extension d'une classe non déclarée.
+//
+// Resultats:
+//    Erreur contextuelle : La classe 'B' n'existe pas.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A extends B {
+}
+{
+}

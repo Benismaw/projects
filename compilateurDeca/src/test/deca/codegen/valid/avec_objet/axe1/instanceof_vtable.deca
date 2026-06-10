@@ -1,0 +1,20 @@
+// Description:
+//    Vérifie la validité de la chaîne des super-classes  via instanceof.
+//
+// Resultats:
+//    Ok
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {}
+class B extends A {}
+class C extends B {}
+
+{
+    A obj = new C();
+    if (obj instanceof B) {
+        println("Ok");
+    }
+}
+

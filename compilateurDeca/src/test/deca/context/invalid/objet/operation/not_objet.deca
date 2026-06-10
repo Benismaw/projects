@@ -1,0 +1,14 @@
+// Description:
+//    Test de contexte : Opérateur unaire NOT (!) sur un objet.
+//
+// Resultats:
+//    Erreur contextuelle : Type A invalide pour l'opérateur unaire '!'.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+{
+    A a = new A();
+    if (!a) {}
+}

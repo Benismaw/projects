@@ -1,0 +1,17 @@
+// Description:
+//    Test de contexte : redéfinition avec retour différent.
+//
+// Resultats:
+//    Erreur contextuelle : Le type de retour int n'est pas compatible avec void.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    void m() {}
+}
+class B extends A {
+    int m() { return 1; }
+}
+{
+}

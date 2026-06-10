@@ -1,0 +1,17 @@
+// Description:
+//    New + cast (T) expr
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 15/01/2026
+class A { float f; }
+class B extends A { }
+{
+    Object o;
+    A a;
+    o = new B();
+    a = (A) o;
+    println(((A)o).f);
+}

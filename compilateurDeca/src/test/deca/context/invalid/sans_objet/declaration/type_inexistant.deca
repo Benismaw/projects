@@ -1,0 +1,15 @@
+// Description:
+//    Sans-Objet
+//    Déclarations
+//    Type inconnu :
+//
+// Resultats:
+//    Ligne 14: 
+//    identificateur de type non déclaré
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    FakeType x;
+}

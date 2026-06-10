@@ -1,0 +1,10 @@
+
+
+// Description:
+//
+// Teste expression fortement parenthesee
+// Historique:09/01/2026
+{
+    int x;
+    x = (((1 + 2)));
+}

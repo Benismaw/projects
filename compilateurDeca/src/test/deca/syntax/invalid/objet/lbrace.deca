@@ -1,0 +1,13 @@
+// Description:
+//  Classe sans accolade ouvrante 
+// Resultats:
+//    Echec (erreur de syntaxe)
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A
+    int x;
+}
+{
+}

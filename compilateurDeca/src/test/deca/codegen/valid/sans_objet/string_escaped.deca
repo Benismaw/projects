@@ -1,0 +1,7 @@
+// Description:
+//    Test des caractères échappés dans les StringLiteral .
+// Resultats:
+//    Un guillemet " ici.
+{
+    println("Un guillemet \" ici.");
+}

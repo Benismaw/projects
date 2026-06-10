@@ -1,0 +1,12 @@
+// Description:
+//    Vérifie que null instanceof Classe est toujours faux
+// Resultats:
+//    false
+// Historique:
+//    cree le 14/01/2026
+class A {}
+{
+    A a = null;
+    if (a instanceof A) { println("true"); } else { println("false"); }
+}
+

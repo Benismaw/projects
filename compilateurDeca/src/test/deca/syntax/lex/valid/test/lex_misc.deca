@@ -1,0 +1,11 @@
+#include "lex_include_file.deca"
+// commentaire ligne
+/*
+  commentaire bloc
+*/
+class _Main$ {
+  void main() {
+    int $x_1 = 10;
+    println("a\\\"b\\\\c");
+  }
+}

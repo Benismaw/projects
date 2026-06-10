@@ -1,0 +1,18 @@
+
+// Description:
+//    Sans-Objet
+//    Affectation
+//    type_unary_op indéfini 
+//
+// Resultats:
+//    Ligne 17: 
+//      Type incompatible pour l'opération unaire ()
+// 
+// Historique:
+//    cree le 06/01/2026
+
+
+{
+    int x = 5;
+    int y = !x;
+}

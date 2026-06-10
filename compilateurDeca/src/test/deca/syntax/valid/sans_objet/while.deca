@@ -1,0 +1,13 @@
+
+
+
+// Description:
+//
+//Teste la boucle while
+
+// Historique:09/01/2026
+{
+    while (true){
+        print(1);
+    }
+}

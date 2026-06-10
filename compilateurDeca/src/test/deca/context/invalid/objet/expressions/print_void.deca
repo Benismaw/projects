@@ -1,0 +1,16 @@
+// Description:
+//    Test de contexte : Affichage d'un retour void.
+//
+// Resultats:
+//    Erreur contextuelle : Type void non supporté par print.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    void m() {}
+}
+{
+    A a = new A();
+    print(a.m());
+}

@@ -1,0 +1,14 @@
+// Description:
+//    Test booleens depuis comparaison d'entree
+//
+// Resultats:
+//    Affiche vrai ou faux
+{
+    int x;
+    boolean b1; boolean b2;
+    x = readInt();
+    b1 = (x > 0);
+    b2 = (x == 0);
+    println(b1);
+    println(b2);
+}

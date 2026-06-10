@@ -1,0 +1,16 @@
+
+// Description:
+//    Sans-Objet
+//    Affectation 
+//    condition type != void :
+//
+// Resultats:
+//    Ligne 15: 
+//     Le type d'une variable ne peut pas être void
+//
+// Historique:
+//    cree le 06/01/2026
+
+{
+    void a;
+}

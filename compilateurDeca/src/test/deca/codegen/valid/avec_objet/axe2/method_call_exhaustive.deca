@@ -1,0 +1,16 @@
+// Description:
+//      Appel de méthode avec 8 paramètres pour tester l'empilement de droite à gauche et l'accès via LB
+// Resultats:
+//    36
+// Historique:
+//    cree le 14/01/2026
+class Calc {
+    int sumMany(int a, int b, int c, int d, int e, int f, int g, int h) {
+        return a + b + c + d + e + f + g + h;
+    }
+}
+{
+    Calc c = new Calc();
+    // Les paramètres doivent être empilés de droite à gauche
+    println(c.sumMany(1, 2, 3, 4, 5, 6, 7, 8)); 
+}

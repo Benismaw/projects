@@ -1,0 +1,6 @@
+// Teste read suivi de print
+{
+    int x;
+    x = readInt();
+    print(x);
+}

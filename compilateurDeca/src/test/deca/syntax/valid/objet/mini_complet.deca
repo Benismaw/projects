@@ -1,0 +1,15 @@
+// Description:
+//  avec Object, null, new, call
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 15/01/2026
+class A { int x(int a){ return a+1; } }
+{
+    Object o;
+    A a;
+    o = (Object) null;
+    a = new A();
+    println(a.x(2));
+}

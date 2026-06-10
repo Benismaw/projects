@@ -1,0 +1,16 @@
+// Description:
+//    Débordement arithmétique sur les flottants.
+//    Vérifie que le compilateur génère un test BOV.
+//
+// Resultats:
+//    Erreur : debordement arithmetique
+// 
+// Historique:
+//    cree le 14/01/2026
+
+{
+    float f = 1.0e30;
+    // La multiplication dépasse les limites de la simple précision IEEE-754
+    f = f * f * f * f; 
+    println("Echec : le debordement n'a pas ete detecte");
+}

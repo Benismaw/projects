@@ -1,0 +1,12 @@
+class Main {
+  void main() {
+    if (true) {
+      println("ok");
+    } else {
+      print(false);
+    }
+    while (null == null) {
+      return;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// Description:
+//    Accès valide à un champ protégé via une méthode de la sous-classe.
+// Resultats:
+//    100
+// Historique:
+//    cree le 14/01/2026
+
+class Super {
+    protected int data = 100;
+}
+
+class Sub extends Super {
+    void show() {
+        println(this.data); // (this est un sous-type de Sub)
+    }
+}
+
+{
+    Sub s = new Sub();
+    s.show();
+}

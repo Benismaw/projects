@@ -1,0 +1,17 @@
+// Description:
+//    Test classique d'encapsulation via Getters et Setters.
+// Resultats:
+//    42
+// Historique:
+//    cree le 14/01/2026
+class Data {
+    protected int value;
+    int getValue() { return this.value; }
+    void setValue(int v) { this.value = v; }
+}
+{
+    Data d = new Data();
+    d.setValue(42);
+    println(d.getValue());
+}
+

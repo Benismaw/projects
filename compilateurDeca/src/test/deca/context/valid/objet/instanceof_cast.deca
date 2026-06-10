@@ -1,0 +1,28 @@
+// Description:
+//    Test de contexte : Cast explicite et opérateur instanceof valides.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+class B extends A {}
+class C extends B {}
+
+{
+    A a;
+    B b;
+    C c = new C();
+    boolean check;
+
+    a = (A) (c);
+
+    b = (B) (a);
+
+    // Instanceof
+    check = (a instanceof B);
+    check = (a instanceof Object);
+    check = (null instanceof C);
+}

@@ -1,0 +1,16 @@
+// Description:
+//    Sans-Objet
+//    Operateur non declaré
+//
+// Resultats:
+//    Ligne 13: 
+//        opération partielle : type de 'y' non déclaré
+// 
+// Historique:
+//    cree le 06/01/2026
+
+{
+    int a;
+
+    a = y;
+}

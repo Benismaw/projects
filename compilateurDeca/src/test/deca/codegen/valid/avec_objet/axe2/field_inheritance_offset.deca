@@ -1,0 +1,18 @@
+// Description:
+//    Vérifie les offsets (décalages) mémoire sur trois niveaux d'héritage.
+//    Chaque classe ajoute un champ, décalant les adresses dans le tas.
+// Resultats:
+//    1 2 3
+// Historique:
+//    cree le 14/01/2026
+
+class A { int x = 1; }
+class B extends A { int y = 2; }
+class C extends B { int z = 3; }
+
+{
+    C obj = new C();
+    // Accès attendu : 1(R1) pour x, 2(R1) pour y, 3(R1) pour z
+    println(obj.x, " ", obj.y, " ", obj.z);
+}
+

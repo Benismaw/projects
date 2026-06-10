@@ -1,0 +1,26 @@
+// Description:
+//    Test de contexte : Instruction return avec sous-typage.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {}
+class B extends A {}
+
+class Factory {
+    A create() {
+        return new B();
+    }
+
+    A createNull() {
+        return null;
+    }
+}
+
+{
+    Factory f = new Factory();
+    A obj = f.create();
+}

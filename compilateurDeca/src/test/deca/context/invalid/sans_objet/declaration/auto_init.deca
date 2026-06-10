@@ -1,0 +1,15 @@
+// Description:
+//    Sans-Objet
+//    Affectation
+//    Affectation incompatible :
+//
+// Resultats:
+//    Ligne 14: 
+//     impossible d’affecter (type_rvalue) à (type_lvalue)
+// 
+// Historique:
+//    cree le 06/01/2026
+
+{
+    int a = a;
+}

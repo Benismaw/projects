@@ -1,0 +1,17 @@
+// Description:
+//    Liaison dynamique avec type de retour void.
+// Resultats:
+//    Appel Sub
+// Historique:
+//    cree le 14/01/2026
+
+class Super {
+    void action() { println("Appel Super"); }
+}
+class Sub extends Super {
+    void action() { println("Appel Sub"); }
+}
+{
+    Super s = new Sub();
+    s.action(); 
+}

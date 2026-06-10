@@ -1,0 +1,16 @@
+// Description:
+//    Test de contexte : Appel de méthode avec argument de type incompatible
+//
+// Resultats:
+//    Erreur contextuelle : Type d'argument incompatible
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A {
+    void m(int x) { }
+}
+{
+    A a = new A();
+    a.m(true);
+}

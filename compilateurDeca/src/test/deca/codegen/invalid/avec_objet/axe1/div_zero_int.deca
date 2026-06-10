@@ -1,0 +1,15 @@
+// Description:
+//    Division entière par zéro.
+//
+// Resultats:
+//    Erreur : division par zero
+// 
+// Historique:
+//    cree le 14/01/2026
+
+{
+    int x = 5;
+    int y = 0;
+    int z = x / y;
+    println("Echec : division par zero non detectee");
+}

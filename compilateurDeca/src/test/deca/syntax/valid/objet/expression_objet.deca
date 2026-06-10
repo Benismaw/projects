@@ -1,0 +1,22 @@
+// Description:
+//    Test des nouvelles expressions : new, this, null, accès champ, appel méthode.
+//    this dans le main sera rejetter dans la partie contexte
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    int x;
+    void m() {}
+}
+
+{
+    A a = new A();
+    a = null;
+    this.m();
+    a.x = 1;
+    a.m();
+}

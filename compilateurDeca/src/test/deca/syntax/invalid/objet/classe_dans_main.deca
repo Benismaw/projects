@@ -1,0 +1,13 @@
+// Description:
+//    Erreur de syntaxe : déclaration de classe à l'intérieur du bloc principal.
+//    Les classes doivent être définies avant le bloc principal.
+//
+// Resultats:
+//    Erreur syntaxique ligne 12
+//
+// Historique:
+//    cree le 13/01/2026
+
+{
+    class A { }
+}

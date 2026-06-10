@@ -1,0 +1,15 @@
+// Description:
+//    Test de contexte : Un champ tente de masquer une méthode héritée
+//
+// Resultats:
+//    Erreur contextuelle : Un champ ne peut pas masquer une méthode héritée
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A {
+    void m() { }
+}
+class B extends A {
+    int m;
+}

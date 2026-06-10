@@ -1,0 +1,13 @@
+
+
+// Description:
+//
+// Teste declaration multiple
+// Historique:09/01/2026
+{
+    int a, b, x;
+    a=1;
+    b=12;
+    x=a+b;
+    println(x);
+}

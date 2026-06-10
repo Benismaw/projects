@@ -1,0 +1,13 @@
+// Description:
+//    Test de contexte : utilisation de this dans le programme principal.
+//
+// Resultats:
+//    Erreur contextuelle : 'this' ne peut pas être utilisé ici.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A { }
+{
+    A a = this;
+}

@@ -1,0 +1,12 @@
+// Description:
+//    Vérifie que l'opérateur modulo (%) est interdit sur les booléens.
+//
+// Resultats:
+//    Ligne 11: l'opération modulo n'est définie qu'entre deux entiers 
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    int x = 5 % true; 
+}

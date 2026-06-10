@@ -1,0 +1,10 @@
+// Description:
+//    Test de la branche de saut (condition fausse) pour la boucle While.
+// Resultats:
+//    Fin
+{
+    while (false) {
+        println("Erreur: passage dans le corps");
+    }
+    println("Fin");
+}

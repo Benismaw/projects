@@ -1,0 +1,7 @@
+{
+    int x = 10;
+    boolean b = true;
+    
+    // Erreur : on ne peut pas additionner un int et un boolean
+    x = b + x;
+}

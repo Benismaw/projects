@@ -1,0 +1,15 @@
+// Description:
+//   if sans parenthèses autour de la condition.
+// Resultats:
+//    Echec (erreur de syntaxe)
+//
+// Historique:
+//    cree le 15/01/2026
+
+{
+    boolean b;
+    b = true;
+    if b {
+        println("ok");
+    }
+}

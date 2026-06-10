@@ -1,0 +1,19 @@
+// Description:
+//    Vérifie l'appel d'une méthode définie en assembleur .
+//
+// Resultats:
+//    1
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    void methodeAsm() asm("WSTR \"1\"
+    WNL
+    RTS");
+}
+
+{
+    A a = new A();
+    a.methodeAsm();
+}

@@ -1,0 +1,6 @@
+class A {
+    A move() { return null; }
+}
+class B extends A {
+    B move() { return null; } // Redéfinition valide (B est sous-type de A)
+}

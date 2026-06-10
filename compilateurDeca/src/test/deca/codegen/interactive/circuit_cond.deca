@@ -1,0 +1,10 @@
+// Description:
+//   test court-circuit &&
+//
+{
+    int x;
+    boolean b;
+    x = readInt();
+    b = (x != 0) && ((100/ x) > 10);
+    println(b);
+}

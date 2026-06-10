@@ -1,0 +1,10 @@
+// Description:
+//    readInt puis calcule
+//
+// Resultats:
+//    si entrée = 21 -> 42
+{
+    int x;
+    x = readInt();
+    println(x * 2);
+}

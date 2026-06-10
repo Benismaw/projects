@@ -1,0 +1,13 @@
+// Description:
+//    Test de contexte : instanceof sur un entier.
+//
+// Resultats:
+//    Erreur contextuelle
+//
+// Historique:
+//    cree le 13/01/2026
+
+{
+    int x = 0;
+    boolean b = x instanceof Object;
+}

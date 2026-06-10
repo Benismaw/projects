@@ -1,0 +1,30 @@
+// Description:
+//    Test de l'instruction PEA pour empiler l'adresse d'un objet 
+//    lors d'un appel de méthode imbriqué.
+// Resultats:
+//    OK
+// Historique: cree le 14/01/2026
+
+class A {
+    void process(A other) {
+        if (other != null) {
+            println("OK");
+        }
+    }
+}
+
+class B {
+    A fieldA = new A();
+    
+    void trigger() {
+        // Lors de l'appel, l'adresse de fieldA doit être empilée.
+        // Un compilateur optimisé peut utiliser PEA 1(R2) pour 
+        // empiler l'adresse du champ directement sur la pile.
+        this.fieldA.process(this.fieldA); 
+    }
+}
+
+{
+    B b = new B();
+    b.trigger();
+}

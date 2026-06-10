@@ -1,0 +1,18 @@
+// Description:
+//    Initialisation des champs avec des expressions, pas juste des constantes.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    int x = 5;
+    // Init avec opération arithmétique
+    int y = x + 3 * 2;
+    // Init avec 'new'
+    A myself = new A();
+}
+{
+}

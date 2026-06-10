@@ -1,0 +1,12 @@
+// Description:
+//    Programme avec une erreur de syntaxe (parenthese manquante).
+//
+// Resultats:
+//    Erreur de syntaxe attendue ligne 11.
+//
+// Historique:
+//    cree le 22/01/2026
+
+{
+   println("Erreur syntaxe" ;
+}

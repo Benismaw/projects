@@ -1,0 +1,12 @@
+
+
+// Description:
+//
+// Teste print et println
+// Historique:09/01/2026
+{
+    int x;
+    x=4;
+    print(x);
+    println(3,x,5);
+}

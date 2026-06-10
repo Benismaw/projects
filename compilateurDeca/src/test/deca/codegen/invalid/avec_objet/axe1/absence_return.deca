@@ -1,0 +1,20 @@
+// Description:
+//    Méthode avec type de retour sans instruction return.
+//
+// Resultats:
+//    Erreur : sortie de la methode A.perdu sans return
+// 
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    int perdu() {
+        // Corps vide : erreur car attend un int
+    }
+}
+
+{
+    A a = new A();
+    int x = a.perdu();
+}
+

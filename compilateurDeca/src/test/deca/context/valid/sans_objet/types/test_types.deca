@@ -1,0 +1,21 @@
+// Description:
+//    Tests basic type declarations and initializations
+//
+// Results:
+//    Success
+//
+// History:
+//    created 11/01/2026
+
+{
+    int i = 0;
+    int j = -5;
+    float x = 0.0;
+    float y = 3.14;
+    boolean b = true;
+    boolean c = false;
+    
+    i = 10;
+    x = 1.5;
+    b = false;
+}

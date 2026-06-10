@@ -1,0 +1,13 @@
+// Description:
+//    Test de contexte : Méthode déclarée deux fois dans la même classe
+//
+// Resultats:
+//    Erreur contextuelle : Nom de méthode déjà déclaré dans la classe
+//
+// Historique:
+//    cree le 15/01/2026
+
+class A {
+    void m() { }
+    void m() { }
+}

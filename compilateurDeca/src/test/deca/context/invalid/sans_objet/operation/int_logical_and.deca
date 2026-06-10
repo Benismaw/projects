@@ -1,0 +1,13 @@
+// Description:
+//    Sans-Objet - Opérations
+//    L'opérateur logique && n'est défini que pour des booléens.
+//
+// Resultats:
+//    Ligne 14 : L'opérateur && n'est pas défini pour le type int (règle 3.33).
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    boolean b = (1 && 0);
+}

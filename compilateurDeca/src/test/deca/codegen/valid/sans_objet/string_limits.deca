@@ -1,0 +1,9 @@
+// Description:
+//    Test d'une chaîne vide et de séquences d'échappement collées.
+// Resultats:
+//    
+//    \\""
+{
+    println(""); 
+    println("\\\\\"\"");
+}

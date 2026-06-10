@@ -1,0 +1,11 @@
+//Description
+//Teste les blocs imbriqués
+//
+// Historique:
+//    cree le 10/01/2026
+{
+    {
+        int x;
+        x=4;
+    }
+}

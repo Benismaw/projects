@@ -1,0 +1,14 @@
+// Description:
+//    Runtime error: plusieurs affectations puis division par zero
+//
+// Resultats:
+//    Erreur d'execution
+{
+    int a = 10;
+    int b = 3;
+    int z;
+    z = a - a;
+    b = b + 1;
+    println(b);
+    println(100 / z);
+}

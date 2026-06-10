@@ -1,0 +1,15 @@
+// Description:
+//    Appels de méthodes chaînés (obj.getA().getB())
+// Resultats:
+//    Succes
+// Historique: cree le 14/01/2026
+class B {
+    void bravo() { println("Succes"); }
+}
+class A {
+    B getB() { return new B(); }
+}
+{
+    A a = new A();
+    a.getB().bravo(); 
+}

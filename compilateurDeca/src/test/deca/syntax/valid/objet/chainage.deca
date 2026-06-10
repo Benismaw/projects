@@ -1,0 +1,25 @@
+// Description:
+//    Test de chainage complexe : appel de méthode qui retourne un objet,
+//    sur lequel on accède à un champ.
+//
+// Resultats:
+//    Succes
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    int x;
+}
+class B {
+    A getA() {
+        return new A();
+    }
+}
+{
+    B b = new B();
+    int val;
+    val = b.getA().x;
+
+    val = this.b.getA().x;
+}

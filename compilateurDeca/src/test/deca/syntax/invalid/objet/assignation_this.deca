@@ -1,0 +1,16 @@
+// Description:
+//    Test de contexte : Tentative de modifier 'this'.
+//
+// Resultats:
+//    Erreur contextuelle : Impossible d'assigner une valeur à 'this'.
+//
+// Historique:
+//    cree le 13/01/2026
+
+class A {
+    void m() {
+        this = null;
+    }
+}
+{
+}

@@ -1,0 +1,6 @@
+class A {
+    void m() {}
+}
+class B extends A {
+    int m; // Erreur : m est déjà une méthode dans la super-classe
+}

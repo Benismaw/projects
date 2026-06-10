@@ -1,0 +1,18 @@
+
+// Description:
+//    Sans-Objet
+//    Affectation et expression de base
+//    condition cast_compatible 
+//
+// Resultats:
+//    Ligne 17: 
+//      Conversion de type (cast) invalide
+// 
+// Historique:
+//    cree le 06/01/2026
+
+
+{
+    int x = 5;
+    boolean y = (boolean)(x);
+}

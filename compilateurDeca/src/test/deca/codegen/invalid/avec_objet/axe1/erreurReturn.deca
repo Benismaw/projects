@@ -1,0 +1,17 @@
+// Description:
+//    Méthode avec type de retour int qui se termine sans instruction return.
+// Resultats:
+//    Erreur : sortie de methode sans passer par "return"
+// Historique:
+//    cree le 14/01/2026
+
+class A {
+    int erreurReturn() {
+        // Pas de return ici
+    }
+}
+
+{
+    A a = new A();
+    int x = a.erreurReturn();
+}

@@ -1,0 +1,11 @@
+// Description:
+//     Force l'utilisation de la pile pour stocker des temporaires (épuisement R2-R15)
+//    Vérifie que chaque fille possède son propre index de VTable correct.
+// Resultats:
+//    16
+
+{
+    int a = 1;
+    println(a + (a + (a + (a + (a + (a + (a + (a + (a + (a + (a + (a + (a + (a + (a + a))))))))))))))); 
+}
+

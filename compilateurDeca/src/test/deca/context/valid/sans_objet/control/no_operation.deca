@@ -1,0 +1,15 @@
+// Description:
+//    Sans-Objet - Control
+//    Vérifie que les points-virgules isolés (NoOperation) sont correctement gérés.
+//
+// Resultats:
+//    Vérification réussie.
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    int a;
+    ; ; ;             // Multiples nœuds NoOperation
+    a = 1;
+}

@@ -1,0 +1,16 @@
+// Description:
+//    Vérifie une boucle while dont la condition dépend de types mixtes.
+//
+// Resultats:
+//    Vérification réussie (ConvFloat dans la condition).
+// 
+// Historique:
+//    cree le 11/01/2026
+
+{
+    int i = 0;
+    float f = 10.5;
+    while (i < f) { // i est converti en float pour la comparaison
+        i = i + 1;
+    }
+}

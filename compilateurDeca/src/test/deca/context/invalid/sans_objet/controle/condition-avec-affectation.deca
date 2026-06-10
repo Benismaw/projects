@@ -1,0 +1,20 @@
+
+// Description:
+//    Sans-Objet
+//    Structures de controle
+//    la condition doit être de type boolean 
+//
+// Resultats:
+//    Ligne 16: 
+//    Condition non booléenne
+// 
+// Historique:
+//    cree le 07/01/2026
+
+
+{
+    boolean a;
+
+    if( a = true){
+    }
+}

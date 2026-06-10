@@ -1,0 +1,19 @@
+// Description:
+//    Utilisation de multiples variables locales dans une méthode.
+// Resultats:
+//    15
+// Historique: cree le 14/01/2026
+class Scope {
+    int sum() {
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        int d = 4;
+        int e = 5;
+        return a + b + c + d + e;
+    }
+}
+{
+    Scope s = new Scope();
+    println(s.sum());
+}

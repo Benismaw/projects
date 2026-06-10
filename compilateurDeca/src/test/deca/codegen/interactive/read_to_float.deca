@@ -1,0 +1,12 @@
+// Description:
+//    Conversion int -> float via affectation
+//
+// Resultats:
+//    Affiche le float correspondant
+{
+    int x;
+    float y;
+    x = readInt();
+    y = x;
+    println(y);
+}
