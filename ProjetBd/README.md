@@ -1,4 +1,20 @@
-# projet_bd
+# Système de Gestion d'Épicerie
+
+Application de gestion d'épicerie avec base de données relationnelle, développée en équipe.
+
+## Ce que fait le projet
+
+Permet de gérer les produits, stocks et commandes d'une épicerie via une interface Java connectée à une base Oracle.
+
+- Modélisation relationnelle (SQL/Oracle)
+- Transactions ACID
+- Interface Java avec JDBC
+
+## Tech Stack
+
+SQL, Oracle, Java, JDBC
+
+# Arborescence
 
 <pre>
 projet_bd/
